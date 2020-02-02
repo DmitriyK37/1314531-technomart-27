@@ -7,7 +7,7 @@
   <body>
     <header>
       <div>
-        <img src="img/logo-technomart.svg" width="220" height="47" alt="Техномарт">
+        <img src="img/icons/logo-technomart.svg" width="220" height="47" alt="Техномарт">
         <button type="button">Поиск</button>
         <ul>
           <li><a href="">Закладки:0</a></li>
@@ -66,20 +66,51 @@
             <p>Фильтр</p>
             <p><b>Цена</b></p>
             <!-- Здесь будет форма -->
-            <p><b>Производители</b></p>
-            <ul>
-                <li>Bosch</li>
-                <li>Интерскол</li>
-                <li>Makita</li>
-                <li>Dewalt</li>
-                <li>Hitachi</li>
-            </ul>
-            <p><b>Питание</b></p>
-            <ul>
-                <li>Аккумуляторные</li>
-                <li>Сетевые</li>
-            </ul>
-            <button type="button">Показать</button>
+            <div>
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="GET" action="">
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="Bosh" id="filter-bosh" checked>
+                    <label for="filter-bosh">Bosch</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="Interscol" id="filter-interscol">
+                    <label for="filter-interscol">Интерскол</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="Makita" id="filter-Makita" checked>
+                    <label for="filter-Makita">Makita</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="Dewalt" id="filter-dewalt">
+                    <label for="filter-dewalt">Dewalt</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="Hitachi" id="filter-Hitachi">
+                    <label for="filter-Hitachi">Hitachi</label>
+                  </li>
+              </ul>
+
+              </fieldset>
+              <fieldset>
+                <legend>Питание</legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="energy" value="akkym" id="filter-akkym" checked>
+                    <label for="filter-akkym">Аккумуляторные</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="energy" value="seti" id="filter-seti">
+                    <label for="filter-seti">Сетевые</label>
+                  </li>
+              </ul>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
+            </div>
         </aside>
         <p>Сортировка:</p>
         <ul>
@@ -119,7 +150,13 @@
                   <li>
                     <ul>
                       <h3><a href="boschBFG2000.html">Перфоратор BOSCH BFG 2000</a></h3>
-                        <li><button type="button">Купить</button></li>
+                        <li><button type="submit">Купить</button>
+                        <div>
+                          <p><span>Товар добавлен в корзину!</span></p>
+                          <a href="">Оформить заказ</a>
+                          <button class="buy-close" type="button">Продолжить покупки</button>
+                        </div>
+                        </li>
                         <li><button type="button">В закладки</button></li> 
                     </ul>
                   <p>
@@ -201,7 +238,7 @@
             </aside>          
     </main>
     <footer>
-      <a><img src="img/logo-technomart.svg" width="220" height="47" alt="Техномарт"></a>
+      <a><img src="img/icons/logo-technomart.svg" width="220" height="47" alt="Техномарт"></a>
       <ul>
         <li><a href="">Компания</a></li>
         <li><a href="">Новости</a></li>
