@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+    font-family: "Cuprum", 'PT Sans', Arial, sans-serif;
     font-size: 17px;
     line-height: 17px;
     color: #000000;
@@ -125,7 +125,7 @@ header {
     display: block;
     width: 270px;
     height: 45px;
-    border: 1px;
+    border: 3px solid #ffffff;
     font-size: 21px;
     line-height: 21px;
     color: #e9292a;
@@ -192,6 +192,7 @@ header {
     color: #ffffff;
 
     background-color: #32425c;
+    box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .site-navigation {
@@ -202,6 +203,15 @@ header {
     color: #ffffff;
 }
 
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
+.site-navigation a:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1d2739;
+}
+
 h2 {
     font-size: 30px;
     line-height: 30px;
@@ -209,14 +219,14 @@ h2 {
 }
 
 .advertising-text {
-    font-family: PT Sans;
+    font-family: 'PT Sans';
     font-size: 13px;
     line-height: 24px;
     color: #000000;
 }
 
 .delivery {
-        font-family: PT Sans;
+        font-family: 'PT Sans';
         font-size: 13px;
         line-height: 24px;
         color: #000000;
@@ -247,7 +257,7 @@ h2 {
 }
 
 .office-address {
-    font-family: PT Sans;
+    font-family: 'PT Sans';
     font-size: 13px;
     line-height: 24px;
     color: #000000;
@@ -352,5 +362,166 @@ h2 {
     color: #ffffff;
     text-align: center;
 
+    background-color: #ee3643;
+}
+
+.enter-form {
+    list-style: none;
+}
+
+.input {
+    display: block;
+    width: 299px;
+    height: 45px;
+    border: none;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.input:hover {
+
+}
+
+.input:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.logout {
+    width: 20px;
+    height: 17px;
+
+    background-image: url("img/icons/icon-logout.svg");
+    background-color: #c5c5c5;
+}
+
+.logout:hover {
+    
+
+    background-image: url("img/icons/icon-logout.svg");
+    background-color: #c5c5c5;
+}
+
+.logout:hover {
+    background-image: url("img/icons/icon-logout.svg");
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.enter-form a {
+    font-size: 16px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.enter-form a:hover {
+    color: #ee3643;
+}
+
+.enter-form a:focus {
+    color: rgba(50, 66, 92, 0.3);
+}
+
+.catalog-modals {
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;   
+}
+
+.catalog-modals a {
+    color: #000000;
+}
+
+.home-page {
+    background-image: url("img/icons/icon-home.svg");
+}
+
+.catalog-heading {
+    display: block;
+    width: 940px;
+    height: 89px;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    text-align: left;
+
+    background-color: #f2f6f8;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+legend {
+    font-family: 'PT Sans';
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+
+.filter ul {
+    list-style: none;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.show {
+    display: inline-block;
+    width: 140px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+
+}
+
+.catalog-item a {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.catalog-item span {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.catalog-item b {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    
     background-color: #ee3643;
 }
