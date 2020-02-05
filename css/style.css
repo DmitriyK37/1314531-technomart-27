@@ -13,6 +13,10 @@ body {
     text-decoration: none;
 }
 
+header {
+    background-color: #f4f7f9;
+}
+
 .logo {
     display: block;
     width: 220px;
@@ -63,6 +67,31 @@ body {
 
 .top-navigation a {
     color: #ffffff;
+}
+
+.marker a,
+.basket a {
+    display: block;
+    width: 150px;
+    height: 42px;
+    border: none;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #293449;
+}
+
+.marker a:hover,
+.basket a:hover {
+    background-color: #212a3a;
+}
+
+.marker a:focus,
+.basket a:focus {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #161d29;
 }
 
 .checkout a {
@@ -309,4 +338,19 @@ h2 {
 
 .footer-social a {
     color: #ffffff;
+}
+
+/*Catalog CSS*/
+
+.basket-full {
+    display: block;
+    width: 150px;
+    height: 42px;
+    border: none;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #ee3643;
 }

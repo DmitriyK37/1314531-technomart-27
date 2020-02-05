@@ -3,30 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,
+    700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,
+    700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div>
-        <img src="img/icons/logo-technomart.svg" width="220" height="47" alt="Техномарт">
+        <div class="logo">  
+          <img src="img/icons/logo-technomart.svg" alt="Техномарт">
+        </div>
         <form action="" method="get">
-          <input type="text" name="search" placeholder="Поиск:">
-        </form>
-        <ul>
-          <li><a href="">Закладки:0</a></li>
-          <li><a href="">Корзина: 10</a></li>
-          <li><a href="">Оформить заказ</a></li>
+          <input type="text" class="search" name="search" placeholder="Поиск:">
+        </form> 
+        <ul class="top-navigation">
+          <li class="marker">
+            <a href="">Закладки:0</a>
+          </li>
+          <li class="basket-full">
+            <a href="">Корзина:10</a>
+          </li>
+          <li class="checkout">
+            <a href="">Оформить заказ</a>
+          </li>
         </ul>
       </div>
       <div>
-      <p>
-        Интернет-магазин строительных материалов и нструментов для ремонта
-      </p>
-      <p>
-        <a href="tel:+78125550555">+7(812)555-05-55</a>
-      </p>
-      <p>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
+        <p class="text-title">
+          Интернет-магазин строительных материалов и нструментов для ремонта
+        </p>
+        <p class="phone">
+          <a href="tel:+78125550555">+7(812)555-05-55</a>
+        </p>
+        <p class="address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
       <ul>
         <li>  
           <button type="button">Равшан Джамшутович</button>
