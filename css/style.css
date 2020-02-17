@@ -297,6 +297,20 @@ main h2 {
     color: #000000;
 }
 
+.popular-product {
+    width: 940px;
+
+    padding: 0px;
+    margin-bottom: 21px;
+}
+
+.popular-brand {
+    width: 940px;
+
+    padding: 0px;
+    margin-bottom: 85px;
+}
+
 .popular-product h2,
 .popular-brand h2{
     font-size: 30px;
@@ -455,18 +469,39 @@ main h2 {
     background-color: #ee3643;
 }
 
-.main-footer {
+.footer-block {
+    margin: 0px;
+    padding: 0px;
     background-color: #32425c;
+}
+
+.footer-block-up {
+    margin: 0px;
+    padding: 0px;
 }
 
 .logo-down {
     display: block;
+    text-align: center;
     width: 220px;
     height: 68px;
+    padding: 0px;
+    margin-top: -17px;
+    margin-left: 130px;
+    margin-bottom: -8px;
+
     border: none;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 
     background-color: #ee3643;
+}
+
+.logo-down img {
+    width: 138px;
+    height: 23px;
+    max-width: 100%;
+
+    margin-top: 20px;
 }
 
 .nav-footer a {
@@ -516,7 +551,9 @@ main h2 {
     color: #ffffff;
 }
 
-/*Catalog CSS*/
+
+/*_____Catalog CSS*_______*/
+
 
 .basket-full {
     display: block;
@@ -671,14 +708,6 @@ main h2 {
 }
 
 .discount {
-    /*font-family: 'PT Sans';
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-    text-align: center;
-
-    text-decoration: line-through;
-    color: #999999;*/
     min-height: 20px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -692,17 +721,6 @@ main h2 {
     padding: 0 25px;
     margin-top: 10px;
     margin-bottom: 15px;
-}
-
-.price
- {
-    /*font-family: 'PT Sans';
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-    text-align: center;
-    margin-bottom: 34px;
-    color: #ffffff;*/
 }
 
 .price {
@@ -732,7 +750,9 @@ main h2 {
 }
 
 
-/*Сетка*/
+/*_____Сетка_____*/
+
+
 .main-header { 
     margin-bottom: 59px;
     min-height: 320px;
@@ -836,7 +856,6 @@ main h2 {
     display: flex;
     margin: 0px;
     padding: 0px;
-    /*width: 940px;*/
     margin-left: 130px;
     margin-right: 110px;
 }
@@ -1214,8 +1233,12 @@ main h2 {
 
 .popular-brand-menu {
     position: relative;
-    margin-left: 130px;
     width: 940px;
+
+    padding: 0px;
+    margin-left: 130px;
+    margin-bottom: 21px;
+    
 }
 
 .popular-brand h2 {
@@ -1223,7 +1246,7 @@ main h2 {
     padding-top: 33px;
     padding-bottom: 35px;
     padding-left: 30px;
-    margin-top: 0px;
+    margin: 0;
 
     background-color: #f9f5f0;
 }
@@ -1253,4 +1276,169 @@ main h2 {
     align-items: center;
     margin-bottom: 20px;
     margin-right: 20px;
+}
+
+
+/*____Fotter___*/
+
+.main-footer {
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block-up {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    width: 1200px;
+    height: 193px;
+
+    margin: 0px;
+}
+
+.address-footer {
+    width: 332px;
+    height: 40px;
+
+    margin-left: 130px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.footer-nav-block {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-footer {
+    display: flex;
+
+    padding: 0px;
+    margin-top: 42px;
+    margin-right: 130px;
+    margin-left: 68px;
+}
+
+.nav-footer a {
+    padding-right: 60px;
+    padding-left: 0px;
+}
+
+.footer-item {
+    display: flex;
+
+    padding: 0px;
+    margin-right: 130px;
+    margin-left: 91px;
+}
+
+.footer-item a {
+    padding-right: 60px;
+    padding-left: 0px;
+}
+
+.footer-contacts {
+    display: flex;
+    width: 1200px;
+    height: 130px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.feedback,
+.work-out {
+    display: block;
+
+    padding: 0px;
+}
+
+.feedback {
+    width: 135px;
+    height: 32px;
+}
+
+.work-out {
+    width: 96px;
+    height: 34px;
+}
+
+.footer-bottom {
+    display: block;
+
+    width: 135px;
+    height: 42px;
+
+    padding: 0px;
+    margin-top: 35px;
+    margin-left: 161px;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+.text-copyright {
+    display: inline;
+    
+    width: 228px;
+    height: 33px;
+    margin-top: 39px;
+    margin-left: 131px;
+}
+
+.feedback {
+    display: inline;
+
+    width: 135px;
+    height: 32px;
+    margin-top: 40px;
+    margin-left: 119px;
+}
+
+.work-out {
+    display: inline;
+
+    width: 96px;
+    height: 32px;
+    margin-top: 40px;
+    margin-left: 53px;
+}
+
+.icon-vk,
+.icon-fb,
+.icon-insta {
+    display: flex;
+
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px;
+    margin-left: 3px;
+
+    border-radius: 50%;
+    background-color: #212a3a;
+}
+
+.icon-vk img,
+.icon-fb img,
+.icon-insta img {
 }
