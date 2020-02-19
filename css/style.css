@@ -293,7 +293,7 @@ header {
 main h2 {
     font-family: 'Cuprum';
     font-size: 30px;
-    line-height: 30px;
+    /*line-height: 30px;*/
     color: #000000;
 }
 
@@ -364,6 +364,8 @@ main h2 {
     font-size: 30px;
     line-height: 30px;
     color: #000000;
+
+    margin-top: 68px;
 }
 
 .company-advantages ul {
@@ -398,14 +400,9 @@ main h2 {
     color: #000000;
 }
 
-.advertising-text {
-    font-family: 'PT Sans';
-    font-size: 13px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.delivery {
+.advertising-text,
+.delivery-text,
+.office-address {
         font-family: 'PT Sans';
         font-size: 13px;
         line-height: 24px;
@@ -423,16 +420,19 @@ main h2 {
 }
 
 .about-company {
-    display: block;
+    display: flex;
     width: 220px;
     height: 38px;
     border: none;
     font-size: 14px;
-    line-height: 18px;
     color: #ffffff;
-    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
     border-radius: 3px;
 
+    margin: 0px;
+    padding: 0px;
     background-color: #ee3643;
 }
 
@@ -814,12 +814,11 @@ main h2 {
     width: 17px;
     height: 17px;
 
-    background-image: url('img/icon/icon-search.svg');
+    background-image: url('../img/icons/icon-search.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-
+    
     opacity: 0.3;
-    background-color: #000000;
 }
 
 .site-enter {
@@ -1228,7 +1227,7 @@ main h2 {
 }
   
 .catalog-item .flag-new {
-    background: url("img/new-flag.png") no-repeat 0 0;
+    background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .popular-brand-menu {
@@ -1279,7 +1278,248 @@ main h2 {
 }
 
 
-/*____Fotter___*/
+/*____________Сервисы_____________*/
+
+.company-advantages {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1200;
+
+    padding: 0px;
+
+    background-color: #f4f7f9;
+}
+
+.services,
+.services-text {
+    margin-left: 130px;
+    padding: 0px;
+}
+
+.services-text {
+    display: flex;
+    width: 398px;
+
+    margin-top: 8px;
+}
+
+.services-menu {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0px;
+
+    margin-top: 46px;
+    margin-bottom: 99px;
+    margin-left: 130px;
+}
+
+.shadow {
+    position: absolute;
+    left: 360px;
+    top: 192px;
+}
+
+.heading-delivery {
+    position: absolute;
+    z-index: 3;
+    left: 450px;
+    top: 204px;
+}
+
+.heading-warranty {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 450px;
+    top: 204px;
+}
+
+.heading-credit {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    left: 450px;
+    top: 204px;
+}
+
+.heading-delivery-text {
+    position: absolute;
+    display: none;
+    width: 275px;
+
+    left: 450px;
+    top: 294px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.warranty-text {
+    position: absolute;
+    display: none;
+    width: 379px;
+
+    left: 450px;
+    top: 294px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.credit-text {
+    position: absolute;
+    /*display: none;*/
+    width: 279px;
+
+    left: 450px;
+    top: 294px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.delivery-big-image {
+    position: absolute;
+    display: none;
+
+    top: 261px;
+    left: 601px;
+}
+
+.warranty-image {
+    position: absolute;
+    display: none;
+
+    top: 239px;
+    left: 689px;
+}
+
+.credit-image {
+    position: absolute;
+    /*display: none;*/
+
+    top: 237px;
+    left: 615px;
+}
+
+.credit-buttom {
+    display: flex;
+    position: absolute;
+    width: 195px;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #ff5357;
+
+    top: 370px;
+    left: 450px;
+}
+
+/*________Доставка-Контакты_____*/
+
+
+.delivery-contacts {
+    display: flex;
+    width: 1200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.delivery-contacts h2 {
+    margin-top: 0px;
+    padding: 0px;
+
+}
+
+.delivery-block {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-content: space-between;
+
+    margin-top: 82px;
+    margin-bottom: 86px;
+    margin-left: 130px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    align-content: space-between;
+
+    margin-top: 82px;
+    margin-right: 130px;
+    margin-bottom: 86px;
+    margin-left: 122px;
+}
+
+.advertising-text {
+    display: flex;
+    width: 519px;
+
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    width: 386px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.delivery-text {
+    display: flex;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.delivery-company {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.delivery-company li {
+    margin-bottom: 24px;
+}
+
+.delivery-company li:last-child {
+    margin-bottom: 0px;
+}
+
+.office-address {
+    display: flex;
+    width: 179px;
+
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.mini-map {
+    /*margin-bottom: 24px;*/
+
+    background-color: dodgerblue;
+}
+
+/*_______Fotter_______*/
+
 
 .main-footer {
     margin: 0px;
@@ -1359,26 +1599,26 @@ main h2 {
 
 .feedback,
 .work-out {
-    display: block;
+    display: flex;
 
     padding: 0px;
 }
 
 .feedback {
     width: 135px;
-    height: 32px;
+    /*height: 32px;*/
 }
 
 .work-out {
     width: 96px;
-    height: 34px;
+    /*height: 34px;*/
 }
 
 .footer-bottom {
-    display: block;
+    display: flex;
 
     width: 135px;
-    height: 42px;
+    /*height: 42px;*/
 
     padding: 0px;
     margin-top: 35px;
@@ -1398,7 +1638,7 @@ main h2 {
     display: inline;
     
     width: 228px;
-    height: 33px;
+    /*height: 33px;*/
     margin-top: 39px;
     margin-left: 131px;
 }
@@ -1438,7 +1678,3 @@ main h2 {
     background-color: #212a3a;
 }
 
-.icon-vk img,
-.icon-fb img,
-.icon-insta img {
-}
