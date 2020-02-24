@@ -98,13 +98,13 @@
         </ul>
         <ul class="slider-block-left">
           <li>
-            <div class="equipment-slide"><a href="">Техника</a>
+            <div class="equipment-slide"><a href="#">Техника</a>
             <button type="button" class="equipment-button">Для стройки</button>
             <img src="img/icons/icon-3.svg" class="equipment-image" width="78" height="62"> 
             </div>
           </li>
           <li>
-            <div class="sale-slide"><a href="">Скидки 50%</a>
+            <div class="sale-slide"><a href="#">Скидки 50%</a>
             <button type="button" class="sale-button">На 350 товаров</button>
             <img src="img/icons/icon-4.svg" class="sale-image" width="59" height="72">
             </div>
@@ -168,6 +168,7 @@
               "Небольшой аккумуляторный перфоратор, оснашен поворотной рукоятью для удобства работы,
               встроенная led-подсветка">
               <h3><a href="boschBFG2000.html">Перфоратор BOSCH BFG 2000</a></h3>
+              <p class="discount"><span></span></p>
               <p class="price"><b>25500 P.</b></p>
               </li>
         </ul>
@@ -179,7 +180,7 @@
         </div>
         <ul class="brand-icon">
           <li> 
-            <a><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
+            <a href=""><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
           </li>
           <li> 
             <a><img src="img/makita.jpg" width="123" height="40" alt="Makita"></a>
@@ -265,7 +266,43 @@
           <p><a class="mini-map"><img src="img/map.jpg" width="300" height="158" class="map" alt="г. Санкт-Петербург, 
           ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></a></p>
           <button type="button" class="write-us">Заблудились? Напишите нам!</button>
-        </div> 
+        </div>
+
+        <section class="modal modal-letter">
+          <form class="write-form" action="" method="POST">
+            <fieldset>
+            <p class="modal-text">Ваше имя:</p>
+            
+              <label class="visually-hidden" for="name">Введите ваше имя и фамилию</label>
+              <input type="text" name="name" value="" placeholder="Имя Фамилия"> 
+            
+            </fieldset>
+            <fieldset>
+            <p class="modal-text">Ваш e-mail:</p> 
+            
+              <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+              <input type="text" name="email" value="" placeholder="email@example.com">
+            
+            </fieldset>
+            <fieldset>
+            <p class="modal-text">Текст письма:</p>
+            
+              <label class="visually-hidden" for="message">Текст письма</label>
+              <textarea name="message" id="message-field" style="width: 460px; min-height: 114px;" placeholder="В свободной форме"></textarea>
+            
+            </fieldset>
+          </form>
+          <div class="send-box"><button type="submit" class="send">Отправить</button></div>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <a><img src="img/map_big.jpg" width="940" height="446" class="map_big" alt="г. Санкт-Петербург, 
+            ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></a>
+          <button class="modal-close" type="button">Закрыть</button> 
+        </section> 
+
       </section>
     </main>
     <footer class="main-footer">
@@ -321,9 +358,6 @@
       </div>
       </div>
     </footer>
-    <a><img src="img/map_big.jpg" width="940" height="446" class="map_big" alt="г. Санкт-Петербург, 
-      ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></a>
-  <button class="map-close" type="button">Закрыть</button> 
 
     <form class="enter-big" action="" method="POST">
       <label>Ваше имя:
@@ -332,18 +366,5 @@
       <button type="submit">Отправить</button><br>
     </form>
 
-      <form class="write-form" action="" method="POST">
-        <label>Ваше имя:
-        <input type="text" name="name" value="" placeholder="Имя Фамилия">
-        </label>
-        <label>Ваш e-mail:
-        <input type="text" name="email" value="" placeholder="email@example.com">
-        </label>
-        <p><label>Текст письма:
-          <textarea name="message" id="message-field" rows="15" cols="80">В свободной форме</textarea>
-        </label></p>
-        <button type="submit">Отправить</button>
-      </form>
-    
   </body>
 </html>

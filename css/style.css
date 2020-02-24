@@ -267,7 +267,7 @@ header {
     background-color: #293449;
 }
 
-.slider-block-right a,
+.slider-block-right  a,
 .slider-block-left a {
     font-family: 'Cuprum';
     font-weight: bold;
@@ -552,205 +552,10 @@ main h2 {
 }
 
 
-/*_____Catalog CSS*_______*/
+
+/*________________________Сетка___________________________*/
 
 
-.basket-full {
-    display: block;
-    width: 150px;
-    height: 42px;
-    border: none;
-    font-size: 17px;
-    line-height: 18px;
-    color: #ffffff;
-    text-align: center;
-
-    background-color: #ee3643;
-}
-
-.enter-form {
-    list-style: none;
-}
-
-.input {
-    display: block;
-    width: 299px;
-    height: 45px;
-    border: none;
-    font-size: 21px;
-    line-height: 21px;
-    color: #000000;
-    text-align: center;
-
-    background-color: #ffffff;
-}
-
-.input:hover {
-
-}
-
-.input:focus {
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.logout {
-    width: 20px;
-    height: 17px;
-    background-image: url("img/icons/icon-logout.svg");
-    background-color: #c5c5c5;
-}
-
-.logout:hover {
-    
-
-    background-image: url("img/icons/icon-logout.svg");
-    background-color: #c5c5c5;
-}
-
-.logout:hover {
-    background-image: url("img/icons/icon-logout.svg");
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.enter-form a {
-    font-size: 16px;
-    color: #32425c;
-    text-decoration: underline;
-}
-
-.enter-form a:hover {
-    color: #ee3643;
-}
-
-.enter-form a:focus {
-    color: rgba(50, 66, 92, 0.3);
-}
-
-.catalog-modals {
-    list-style: none;
-    font-size: 13px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #000000;   
-}
-
-.catalog-modals a {
-    color: #000000;
-}
-
-.home-page {
-    background-image: url("img/icons/icon-home.svg");
-}
-
-.catalog-heading {
-    display: block;
-    width: 940px;
-    height: 89px;
-    border: none;
-    font-size: 30px;
-    line-height: 30px;
-    color: #32425c;
-    text-align: left;
-
-    background-color: #f2f6f8;
-}
-
-.filter fieldset {
-    border: none;
-}
-
-.legend {
-    font-family: 'PT Sans';
-    font-size: 17px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000000;
-}
-
-.filter ul {
-    list-style: none;
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.show {
-    display: inline-block;
-    width: 140px;
-    height: 38px;
-    border: solid 1px #e5e5e5;
-    font-family: 'PT Sans';
-    font-size: 13px;
-    line-height: 18px;
-    color: #000000;
-    text-align: center;
-
-    background-color: #ffffff;
-}
-
-.catalog-list {
-    list-style: none;
-}
-
-.catalog-item {
-    background-color: #ffffff;
-    border: solid 1px #e5e5e5;
-
-}
-
-.catalog-item a {
-    font-family: 'PT Sans';
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    color: #000000;
-}
-
-.discount {
-    min-height: 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  
-    color: #999;
-    text-decoration: line-through;
-}
-
-.catalog-item h3 {
-    min-height: 40px;
-    padding: 0 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.price {
-    position: relative;
-    width: 80px;
-    margin: 10px auto;
-    margin-bottom: 21px;
-    padding: 10px 30px;
-  
-    color: white;
-    background: #ee3643;
-    border-radius: 3px;
-}
-
-.price::after {
-    content: "";
-  
-    position: absolute;
-    top: 0;
-    right: -20px;
-  
-    width: 0;
-    height: 0;
-  
-    border: 20px solid white;
-    border-left-color: #ee3643;
-}
-
-
-/*_____Сетка_____*/
 
 
 .main-header { 
@@ -1277,8 +1082,20 @@ main h2 {
     margin-right: 20px;
 }
 
+.brand-icon li:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
 
-/*____________Сервисы_____________*/
+.brand-icon li:active {
+    opacity: 30%;
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+
+
+/*_________________________Сервисы___________________________*/
+
+
 
 .company-advantages {
     display: flex;
@@ -1430,14 +1247,21 @@ main h2 {
 
 .delivery-contacts {
     display: flex;
+    position: relative;
     width: 1200px;
     margin: 0px;
     padding: 0px;
+
+
+    background-color: red;
+
 }
 
 .delivery-contacts h2 {
     margin-top: 0px;
     padding: 0px;
+
+    background-color: seagreen;
 
 }
 
@@ -1450,6 +1274,8 @@ main h2 {
     margin-top: 82px;
     margin-bottom: 86px;
     margin-left: 130px;
+
+    background-color: sienna;
 }
 
 .contacts {
@@ -1463,6 +1289,9 @@ main h2 {
     margin-right: 130px;
     margin-bottom: 86px;
     margin-left: 122px;
+
+
+    background-color: seashell;
 }
 
 .advertising-text {
@@ -1471,6 +1300,8 @@ main h2 {
 
     padding: 0px;
     margin-top: 0px;
+
+    background-color: slateblue;
 }
 
 .delivery {
@@ -1480,6 +1311,9 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
+
+    background-color: yellow;
+
 }
 
 .delivery-text {
@@ -1487,6 +1321,9 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
+
+
+    background-color: wheat;
 }
 
 .delivery-company {
@@ -1494,6 +1331,8 @@ main h2 {
     flex-direction: column;
     padding: 0px;
     margin-top: 0px;
+
+    background-color: #212a3a;
 }
 
 .delivery-company li {
@@ -1510,6 +1349,8 @@ main h2 {
 
     padding: 0px;
     margin-top: 0px;
+
+    background-color: #dc91d8;
 }
 
 .mini-map {
@@ -1524,13 +1365,14 @@ main h2 {
 .main-footer {
     margin: 0px;
     padding: 0px;
-
-    
 }
 
 .footer-block {
     display: flex;
     flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 .footer-block-up {
@@ -1586,6 +1428,10 @@ main h2 {
 .footer-item a {
     padding-right: 60px;
     padding-left: 0px;
+}
+
+.footer-item a:last-child {
+    margin-right: 0px;
 }
 
 .footer-contacts {
@@ -1678,3 +1524,364 @@ main h2 {
     background-color: #212a3a;
 }
 
+
+
+/*_________Формы___________*/
+
+
+.modal {
+    position: absolute;
+
+    color: #000000;
+    
+    border: 7px;
+    border-color: red;
+    background-color: #ffffff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+}
+
+.modal-letter {
+    display: none;
+    top: 204px;
+    right: 291px;;
+
+    width: 620px;
+    padding-top: 48px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+
+    width: 21px;
+    height: 21px;
+
+    text-indent:-9999px;
+  
+    border: 0;
+  
+    cursor: pointer;
+
+    
+  }
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: -3px;
+
+  width: 27px;
+  height: 4px;
+
+  border-radius: 1px;
+
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+  }
+  
+.modal-close::after {
+    transform: rotate(-45deg);
+  }
+
+.modal-text {
+    display: flex;
+    max-width: 100px;
+    font-size: 18px; 
+    color: #000000;
+
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 13px;
+}
+
+.write-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0px;
+    padding-bottom: 37px;
+    margin: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.write-form fieldset {
+    border: 0px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.write-form input,
+.write-form textarea {
+    width: 220px;
+    min-height: 38px;
+
+    border: solid 2px #dee3e4;
+    border-radius: 3px;
+}
+
+.write-form input[type="text"],
+.write-form textarea[id="message-field"] {
+  font-family: PTSans;
+  font-size: 13px;
+  color: #a9a9a9;
+  box-sizing: border-box;
+
+  padding-left: 16px;
+  margin: 0px;
+}
+
+.write-form fieldset:first-child {
+    margin-right: 20px;
+}
+
+.write-form fieldset:last-child {
+    margin-top: 22px;
+}
+
+.write-form textarea {
+    padding-top: 13px;
+}
+
+.send-box {
+    display: flex;
+    width: 100%;
+    height: 112px;
+
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
+} 
+
+.send {
+    display: flex;
+    width: 460px;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+
+    background-color: #ee3643;
+}
+
+.modal-map {
+    display: none;
+    top: 24px;
+    left: 130px;
+
+}
+
+
+
+
+/*__________________Catalog CSS*___________________*/
+
+
+
+.basket-full {
+    display: block;
+    border: none;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 50px;
+    padding-right: 31px;
+
+    background-color: #ee3643;
+}
+
+.enter-form {
+    list-style: none;
+}
+
+.input {
+    display: block;
+    width: 299px;
+    height: 45px;
+    border: none;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.input:hover {
+
+}
+
+.input:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.logout {
+    width: 20px;
+    height: 17px;
+    background-image: url("img/icons/icon-logout.svg");
+    background-color: #c5c5c5;
+}
+
+.logout:hover {
+    
+
+    background-image: url("img/icons/icon-logout.svg");
+    background-color: #c5c5c5;
+}
+
+.logout:hover {
+    background-image: url("img/icons/icon-logout.svg");
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.enter-form a {
+    font-size: 16px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.enter-form a:hover {
+    color: #ee3643;
+}
+
+.enter-form a:focus {
+    color: rgba(50, 66, 92, 0.3);
+}
+
+.catalog-modals {
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;   
+}
+
+.catalog-modals a {
+    color: #000000;
+}
+
+.home-page {
+    background-image: url("img/icons/icon-home.svg");
+}
+
+.catalog-heading {
+    display: block;
+    width: 940px;
+    height: 89px;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    text-align: left;
+
+    background-color: #f2f6f8;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.legend {
+    font-family: 'PT Sans';
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+
+.filter ul {
+    list-style: none;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.show {
+    display: inline-block;
+    width: 140px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+
+}
+
+.catalog-item a {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.discount {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  
+    color: #999;
+    text-decoration: line-through;
+}
+
+.catalog-item h3 {
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.price {
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 21px;
+    padding: 10px 30px;
+  
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+
+.price::after {
+    content: "";
+  
+    position: absolute;
+    top: 0;
+    right: -20px;
+  
+    width: 0;
+    height: 0;
+  
+    border: 20px solid white;
+    border-left-color: #ee3643;
+}
