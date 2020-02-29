@@ -55,39 +55,72 @@ header {
     background-color: #ee3643;
 }
 
+.search-block {
+    display: flex;
+    width: 270px;
+    min-height: 42px;
+
+    padding: 0px;
+    margin: 0px;
+    margin-left: 350px;
+}
+
 .search {
-    display: block;
+    display: flex;
+    position: relative;
     border: none;
+    width: 270px;
+    min-height: 42;
     font-size: 17px;
     line-height: 18px;
-    padding-top: 14px;
-    padding-bottom: 13px;
+
     padding-left: 49px;
-    margin-left: 350px;
 
     background-color: #293449;
+}
+
+.search-icon {
+    position: absolute;
+
+    top: 12px;
+    left: 367px;
+    width: 17px;
+    height: 17px;
+
+    opacity: 0.3;
+}
+
+.search-text {
+    position: absolute;
+
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    top: 14px;
+    left: 399px;
 }
 
 .search:hover {
     outline: none;
     background-color: #212a3a;
-    fill: #ffffff;
 }
 
+.search:hover + label svg {
+    opacity: 1;
+}
 
-/*.search:hover {
-    outline: none;
-    background-color: #212a3a;
-    fill: #ffffff;
-}*/
+.search:focus + label span {
+    visibility: hidden;
+}
 
 .search:focus {
     outline: none;
     background-color: #ffffff;
 }
 
-.search::placeholder {
-    color: #ffffff;
+.search:focus + label path{
+    fill: #ee3643;
 }
 
 .top-navigation {
@@ -103,6 +136,11 @@ header {
 
 .top-navigation a {
     color: #ffffff;
+}
+
+.marker,
+.basket  {
+    position: relative;
 }
 
 .marker a,
@@ -127,15 +165,45 @@ header {
     padding-right: 31px;
 }
 
+.marker-icon {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    width: 17px;
+    height: 17px;
+
+    opacity: 0.3;
+}
+
+.basket-icon {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    width: 17px;
+    height: 17px;
+
+    opacity: 0.3;
+}
+
 .marker a:hover,
 .basket a:hover {
     background-color: #212a3a;
+}
+
+.marker a:hover + svg,
+.basket a:hover + svg {
+    opacity: 1;
 }
 
 .marker a:focus,
 .basket a:focus {
     color: rgba(255, 255, 255, 0.6);
     background-color: #161d29;
+}
+
+.marker a:focus + svg,
+.basket a:focus + svg {
+    opacity: 0.5;
 }
 
 .checkout a {
@@ -163,56 +231,136 @@ header {
 }
 
 .text-title {
+    display: flex;
+    width: 196px;
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     text-align: left;
     color: #ee3643;
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 46px;
+}
+
+.text-title p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.phone-addres {
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+
+    padding: 0px;
+    padding-top: 46px;
+    padding-bottom: 44px;
+
+    margin: 0px;
+}
+
+.phone {
+    position: relative;
+}
+
+.icon-phone {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+}
+
+.phone-addres .address {
+    padding-left: 10px;
+}
+
+.phone-addres p {
+    margin: 0px;
+    padding: 0px;
 }
 
 .phone a {
-    display: block;
+    display: flex;
+    width: 264px;
+    height: 39px;
     border: 3px solid #ffffff;
     font-size: 21px;
     line-height: 21px;
     color: #e9292a;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px;
+    margin: 0px;
 
     background-color: #f1f5f7;
 }
 
 .address {
+    display: flex;
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
     color: #32425c;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 .site-enter {
+    display: flex;
+    position: relative;
     list-style: none;
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 46px;
+    margin-left: 69px;
+
 }
 
 .enter {
-    display: block;
+    display: flex;
     width: 121px;
     height: 45px;
     border: none;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
-    text-align: center;
+    outline: none;
 
+    padding: 0px;
+    padding-left: 48px;
+    margin: 0px;
+    
     background-color: #ffffff;
+}
+
+.icon-login {
+    position: absolute;
+    
+    top: 14px;
+    left: 14px;
+    width: 20px;
+    height: 17px;
 }
 
 .enter:hover {
     color: #ee3643;
 }
 
+.enter:hover + svg path{
+    fill: #293449;
+}
+
 .enter:focus {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.enter:focus + svg {
+    opacity: 0.3;
 }
 
 .registration {
@@ -225,6 +373,7 @@ header {
     color: #000000;
     text-align: center;
     margin-left: 10px;
+    outline: none;
 
     background-color: #ffffff;
 }
@@ -283,11 +432,6 @@ header {
     padding-top: 26px;
     padding-bottom: 75px;
     padding-left: 22px;
-}
-
-
-.slider-block-left button{
-    
 }
 
 .materials-button:hover,
@@ -380,7 +524,7 @@ main h2 {
     list-style: none;
 }
 
-.company-advantages h2 {
+.company-advantages h3 {
     font-size: 36px;
     line-height: 36px;
     color: #32425c;
@@ -398,8 +542,8 @@ main h2 {
     list-style: none;
 }
 
-.company-advantages button {
-    display: block;
+.services-menu-link {
+    display: flex;
     width: 240px;
     height: 61px;
     border: none;
@@ -407,18 +551,30 @@ main h2 {
     font-size: 21px;
     line-height: 30px;
     color: #ffffff;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     
-    box-shadow: inset 0px 1px 0 0 #405069;;
-    background-color: #32425c;
+    box-shadow: inset 0px 1px 0 0 #32425c;
+    background-color: #293449;
 }
 
-.company-advantages li:first-child {
+.active {
+    display: flex;
+    width: 240px;
+    height: 61px;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    line-height: 30px;
+    color: #32425c;
+    align-items: center;
+    justify-content: center;
     
-
+    box-shadow: inset 0px 1px 0 0 #ffffff;
+    background-color: #ffffff;
 }
 
-.company-advantages button:focus {
+.services-menu-link:active {
     color: #32425c;
 
     box-shadow: inset 0px 1px 0 0 #ffffff;
@@ -599,13 +755,12 @@ main h2 {
 .header-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 320px;
 }
 
 .header-up-block {
     width: 100%;
-    margin-bottom: 46px;
+    padding: 0px;
 }
 
 .header-up-block-wrapper {
@@ -620,8 +775,8 @@ main h2 {
     width: 1200px;
     margin: 0;
     padding: 0;
+
     min-height: 158px;
-    justify-content: space-between;
 }
 
 .main-navigation {
@@ -630,6 +785,7 @@ main h2 {
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 60px;
+    margin-left: 130px;
 }
 
 .top-navigation {
@@ -638,22 +794,11 @@ main h2 {
     padding: 0px;
 }
 
-.search-all {
-    position: relative;
-    border: 0px;
-
-    padding: 0px;
-    margin: 0px;
-
-    box-sizing: border-box;
-}
-
-.search-icon {
+.search-all button {
     position: absolute;
+
     top: 12px;
-    left: 367px;
-    width: 17px;
-    height: 17px;  
+    left: 499px;
 }
 
 .site-enter {
@@ -762,6 +907,16 @@ main h2 {
     background-color: #ffbf47;
 }
 
+.materials-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 27px;
+    left: 213px;
+    background-image: url(../img/icons/icon-1.svg); 
+    width: 44px;
+    height: 65px;
+}
+
 .materials-slide .flag {
     position: absolute;
     left: 240px;
@@ -775,7 +930,7 @@ main h2 {
 }
 
 .materials-slide .flag-new {
-    background: url("../img/new-flag.png") no-repeat 0 0;
+    background: url(../img/new-flag.png) no-repeat 0 0;
 }
 
 .materials-button {
@@ -788,21 +943,26 @@ main h2 {
     padding-bottom: 14px;
     border: none;
     border-radius: 3px;
+    outline: none;
     bottom: 22px;
     left: 25px;
 
     background-color: rgba(0,0,0,0.1);
 }
 
-.materials-image {
-    position: absolute;
-    bottom: 27px;
-    left: 213px;
-}
-
 .instruments-slide {
     position: relative;
     background-color: #3bbce3;
+}
+
+.instruments-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 29px;
+    left: 197px;
+    background-image: url(../img/icons/icon-2.svg); 
+    width: 75px;
+    height: 61px;
 }
 
 .instruments-button {
@@ -815,21 +975,26 @@ main h2 {
     padding-bottom: 14px;
     border: none;
     border-radius: 3px;
+    outline: none;
     bottom: 22px;
     left: 25px;
 
     background-color: rgba(0,0,0,0.1);
 }
 
-.instruments-image {
-    position: absolute;
-    bottom: 29px;
-    left: 197px;
-}
-
 .equipment-slide {
     position: relative;
     background-color: #dc91d8;
+}
+
+.equipment-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 191px;
+    background-image: url(../img/icons/icon-3.svg); 
+    width: 78px;
+    height: 62px;
 }
 
 .equipment-button {
@@ -842,21 +1007,26 @@ main h2 {
     padding-bottom: 14px;
     border: none;
     border-radius: 3px;
+    outline: none;
     bottom: 22px;
     left: 25px;
 
     background-color: rgba(0,0,0,0.1);
 }
 
-.equipment-image {
-    position: absolute;
-    bottom: 30px;
-    left: 191px;
-}
-
 .sale-slide {
     position: relative;
     background-color: #8ed78f;
+}
+
+.sale-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 196px;
+    background-image: url(../img/icons/icon-4.svg); 
+    width: 59px;
+    height: 72px;
 }
 
 .sale-button {
@@ -869,21 +1039,26 @@ main h2 {
     padding-bottom: 14px;
     border: none;
     border-radius: 3px;
+    outline: none;
     bottom: 22px;
     left: 25px;
 
     background-color: rgba(0,0,0,0.1);
 }
 
-.sale-image {
-    position: absolute;
-    bottom: 25px;
-    left: 196px;
-}
-
 .delivery-slide {
     position: relative;
     background-color: #ffc047;
+}
+
+.delivery-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: 191px;
+    background-image: url(../img/icons/icon-5.svg); 
+    width: 78px;
+    height: 63px;
 }
 
 .delivery-button {
@@ -896,16 +1071,11 @@ main h2 {
     padding-bottom: 14px;
     border: none;
     border-radius: 3px;
+    outline: none;
     bottom: 22px;
     left: 25px;
 
     background-color: rgba(0,0,0,0.1);
-}
-
-.delivery-image {
-    position: absolute;
-    bottom: 28px;
-    left: 191px;
 }
 
 .slide-image-block {
@@ -1010,7 +1180,7 @@ main h2 {
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    width: 970px;
+    width: 940px;
     margin-top: 20px;
     margin-right: 0px;
     margin-left: 130px;
@@ -1029,6 +1199,10 @@ main h2 {
     text-align: center;
     
     border: 1px solid #ccc;
+}
+
+.catalog-list li:last-child {
+    margin-right: 0px;
 }
 
 .catalog-item img {
@@ -1052,6 +1226,7 @@ main h2 {
 .catalog-item .actions .buy,
 .catalog-item .actions .bookmark {
   display: block;
+  position: relative;
   width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
@@ -1075,6 +1250,42 @@ main h2 {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions .buy::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    background-image: url(../img/icons/icon-cart.svg); 
+    width: 15px;
+    height: 15px;
+
+    opacity: 0.3;
+}
+
+.catalog-item .actions .bookmark:hover {
+    border-color: #32425c;
+}
+
+.catalog-item .actions .bookmark:focus {
+    opacity: 0.3;
+}
+
+
+.catalog-item .actions .buy:hover {
+    background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom-color: #367315;
+}
+
+.catalog-item .actions .buy:hover + svg {
+    opacity: 1;  
+}
+
+.catalog-item .actions .buy:focus {
+    background-color: #518534;
+    border: 3px solid #518534;
 }
 
 .catalog-item .actions {
@@ -1199,10 +1410,15 @@ main h2 {
     margin-left: 130px;
 }
 
-.shadow {
+.services-menu::before {
+    content: "";
     position: absolute;
     left: 360px;
     top: 192px;
+
+    background-image: url(../img/shadow.png);
+    width: 10px;
+    height: 279px;
 }
 
 .heading-delivery {
@@ -1212,10 +1428,21 @@ main h2 {
     top: 204px;
 }
 
+.company-advantages::before {
+    content: "";
+    position: absolute;
+    left: 601px;
+    top: 261px;
+
+    background-image: url(../img/delivery.png);
+    width: 468px;
+    height: 261px;
+
+}
+
 .heading-warranty {
     display: none;
     position: absolute;
-    z-index: 2;
     left: 450px;
     top: 204px;
 }
@@ -1223,7 +1450,6 @@ main h2 {
 .heading-credit {
     position: absolute;
     display: none;
-    z-index: 1;
     left: 450px;
     top: 204px;
 }
@@ -1264,31 +1490,7 @@ main h2 {
     margin: 0px;
 }
 
-.delivery-big-image {
-    position: absolute;
-    /*display: none;*/
-
-    top: 261px;
-    left: 601px;
-}
-
-.warranty-image {
-    position: absolute;
-    display: none;
-
-    top: 239px;
-    left: 689px;
-}
-
-.credit-image {
-    position: absolute;
-    display: none;
-
-    top: 237px;
-    left: 615px;
-}
-
-.credit-buttom {
+.company-advantages .credit-buttom {
     display: flex;
     display: none;
     position: absolute;
@@ -1310,6 +1512,11 @@ main h2 {
     left: 450px;
 }
 
+
+.services-menu a:active ~ .services-content li {
+    display: none;
+}
+
 /*________Доставка-Контакты_____*/
 
 
@@ -1322,7 +1529,6 @@ main h2 {
 
 
     background-color: red;
-
 }
 
 .delivery-contacts h2 {
@@ -1330,7 +1536,6 @@ main h2 {
     padding: 0px;
 
     background-color: seagreen;
-
 }
 
 .delivery-block {
@@ -1761,8 +1966,8 @@ main h2 {
 }
 
 .modal-map {
-    display: flex;
-    /*display: none;*/
+    /*display: flex;*/
+    display: none;
     top: 24px;
     left: 131px;
 

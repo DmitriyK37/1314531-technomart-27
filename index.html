@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,
-    400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,
-    700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -17,23 +15,32 @@
           <div class="logo">  
             <img src="img/icons/logo-technomart.svg" alt="Техномарт">
           </div>
-          <fieldset class="search-all">
-          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-            <path fill="#231F20" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0
-             0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 
-             17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0
-              3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-          </svg>
-          <form action="" method="get">
-            <input type="text" class="search" name="search" placeholder="Поиск:">
+          <form class="search-block" action="" method="get">
+            <input type="text" class="search" name="search">
+            <label class="search-all">
+              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0
+               0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 
+               17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0
+                3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+               </svg>
+               <span class="search-text">Поиск:</span>
+            </label>
           </form>
-          </fieldset>
         <ul class="top-navigation">
           <li class="marker">
             <a href="">Закладки: 0</a>
+            <svg class="marker-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+            <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637
+            0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
           </li>
           <li class="basket">
             <a href="">Корзина: 0</a>
+            <svg class="basket-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+              <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+              <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+              <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+            </svg>
           </li>
           <li class="checkout">
             <a href="">Оформить заказ</a>
@@ -43,18 +50,31 @@
         </div>
         <div class="header-mid-block">
         <p class="text-title">
-          Интернет-магазин строительных материалов и иструментов для ремонта
+          Интернет-магазин строительных материалов<br> и иструментов для ремонта
         </p>
         <div class="phone-addres">
-        <p class="phone">
-          <a href="tel:+78125550555">+7(812)555-05-55</a>
-        </p>
-        <p class="address">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
+          <p class="phone">
+            <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+              <path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66
+              1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018
+              1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879
+              2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 
+              1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
+            </svg>
+            <a href="tel:+78125550555">+7(812)555-05-55</a>
+          </p>
+          <p class="address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
         </div>
         <ul class="site-enter">
-          <li><button type="button" class="enter">Войти</button>
+          <li>
+            <button type="button" class="enter">Войти</button>
+            <svg class="icon-login" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+              <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+              <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81
+              3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0
+              .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
           </li>
           <li><button type="button" class="registration">Регистрация</button></li>
         </ul>
@@ -81,13 +101,11 @@
               <div class="flag flag-new">новинка</div>
               <b>Материалы</b>
               <button type="button" class="materials-button">на любой вкус</button>
-              <img src="img/icons/icon-1.svg" class="materials-image" width="44" height="65">
             </div>
           </li>
           <li>
             <div class="instruments-slide"><b>Инструменты</b>
             <button type="button" class="instruments-button">на все случаи</button>
-            <img src="img/icons/icon-2.svg" class="instruments-image" width="75" height="61">
             </div>
           </li>
           <li class="slide-image-block">
@@ -107,19 +125,16 @@
           <li>
             <div class="equipment-slide"><b>Техника</b>
             <button type="button" class="equipment-button">Для стройки</button>
-            <img src="img/icons/icon-3.svg" class="equipment-image" width="78" height="62"> 
             </div>
           </li>
           <li>
             <div class="sale-slide"><b>Скидки 50%</b>
             <button type="button" class="sale-button">На 350 товаров</button>
-            <img src="img/icons/icon-4.svg" class="sale-image" width="59" height="72">
             </div>
           </li>
           <li>
             <div class="delivery-slide"><b>Доставка</b>
             <button type="button" class="delivery-button">На 350 товаров</button>
-            <img src="img/icons/icon-5.svg" class="delivery-image" width="78" height="63">
             </div>
           </li>
         </ul>
@@ -219,19 +234,21 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="services-menu">
-          <li><button type="button">Доставка</button></li>
-          <li><button type="button">Гарантия</button></li>
-          <li><button type="button">Кредит</button></li>
+          <li><a href="#delivery" class="services-menu-link active">Доставка</a></li>
+          <li><a href="#guarantee" class="services-menu-link">Гарантия</a></li>
+          <li><a href="#credit" class="services-menu-link">Кредит</a></li>
         </ul>
-        <img src="img/shadow.png" class="shadow" width="10" height="279">
-        <h2 class="heading-delivery">Доставка</h2>
+        <ul class="services-content">
+          <li id="delivery">
+        <h3 class="heading-delivery">Доставка</h3>
         <p class="heading-delivery-text">Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!
         </p>
-        <img src="img/delivery.png" class="delivery-big-image" width="468" height="261">
-        <h2 class="heading-warranty">Гарантия</h2>
+        </li>
+        <li id="guarantee">
+        <h3 class="heading-warranty">Гарантия</h3>
         <p class="warranty-text">
           Если купленный у нас товар поломается или заискрит,
           а также в случае пожара, спровоцированного его возгоранием,<br>  
@@ -239,13 +256,15 @@
           сгоревший товар на новый.<br>
           Дом уж восстановите как-нибудь сами.
         </p>
-        <img src="img/guarantee.png" class="warranty-image" width="389" height="283">
-        <h2 class="heading-credit">Кредит</h2>
+        </li>
+        <li id="credit">
+        <h3 class="heading-credit">Кредит</h3>
         <p class="credit-text">Залезть в долговую яму стало проще! 
            Кредитные консультанты придут вам на помощь.
         </p>
-        <img src="img/credit.png" class="credit-image" width="465" height="285">
         <a class="credit-buttom" href="">Отправить заявку</a>
+        </li>
+        </ul>
       </section>
       <section class="delivery-contacts">
         <div class="delivery-block">
@@ -279,17 +298,17 @@
             <fieldset>
             <p class="modal-text">Ваше имя:</p>
               <label class="visually-hidden" for="name">Введите ваше имя и фамилию</label>
-              <input type="text" name="name" value="" placeholder="Имя Фамилия"> 
+              <input type="text" id="name" name="name" value="" placeholder="Имя Фамилия"> 
             </fieldset>
             <fieldset>
             <p class="modal-text">Ваш e-mail:</p> 
               <label class="visually-hidden" for="email">Введите ваш e-mail</label>
-              <input type="text" name="email" value="" placeholder="email@example.com">
+              <input type="text" id="email" name="email" value="" placeholder="email@example.com">
             </fieldset>
             <fieldset>
             <p class="modal-text">Текст письма:</p>
               <label class="visually-hidden" for="message">Текст письма</label>
-              <textarea name="message" id="message-field" style="width: 460px; min-height: 114px;" placeholder="В свободной форме"></textarea>
+              <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
             </fieldset>
           </form>
           <div class="send-box"><button type="submit" class="send">Отправить</button></div>
