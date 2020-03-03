@@ -465,6 +465,9 @@ main h2 {
     font-size: 30px;
     /*line-height: 30px;*/
     color: #000000;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 .popular-product {
@@ -530,10 +533,12 @@ main h2 {
     color: #32425c;
 }
 
-.company-advantages .services {
+.services {
     font-size: 30px;
     line-height: 30px;
     color: #000000;
+
+    text-transform: uppercase;
 
     margin-top: 68px;
 }
@@ -591,10 +596,13 @@ main h2 {
 .advertising-text,
 .delivery-text,
 .office-address {
-        font-family: 'PT Sans';
-        font-size: 13px;
-        line-height: 24px;
-        color: #000000;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 .delivery-company {
@@ -619,8 +627,9 @@ main h2 {
     justify-content: center;
     border-radius: 3px;
 
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+
     background-color: #ee3643;
 }
 
@@ -633,14 +642,10 @@ main h2 {
 
 .mini-map {
     display: block;
-    background: url("img/map.jpg");
+    background: url("../img/map.jpg");
     width: 300px;
     height: 158px;
-    
-}
-
-.mini-map:hover {
-    background: url("img/map_big.jpg");
+    cursor: pointer;
 }
 
 .write-us {
@@ -654,6 +659,9 @@ main h2 {
     text-transform: uppercase;
     text-align: center;
     border-radius: 3px;
+
+    padding: 0px;
+    margin: 0px;
 
     background-color: #ee3643;
 }
@@ -849,6 +857,7 @@ main h2 {
 
 .slider-block-right {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     list-style: none;
     margin: 0px;
@@ -880,10 +889,6 @@ main h2 {
 .slider-block-left div {
     margin-left: 0px;
     margin-bottom: 20px;
-}
-
-.slide-image1 {
-    position: absolute;
 }
 
 .slider-block-left {
@@ -930,7 +935,7 @@ main h2 {
 }
 
 .materials-slide .flag-new {
-    background: url(../img/new-flag.png) no-repeat 0 0;
+    background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .materials-button {
@@ -1078,10 +1083,6 @@ main h2 {
     background-color: rgba(0,0,0,0.1);
 }
 
-.slide-image-block {
-    position: relative;
-}
-
 .slide-image-text {
     position: absolute;
     color: #ffffff;
@@ -1137,6 +1138,7 @@ main h2 {
     bottom: 112px;
     left: 25px;
     cursor: pointer;
+    z-index: 5;
 
     border: none;
     outline: none;
@@ -1148,6 +1150,7 @@ main h2 {
     bottom: 112px;
     right: 25px;
     cursor: pointer;
+    z-index: 4;
 
     border: none;
     outline: none;
@@ -1382,21 +1385,24 @@ main h2 {
     width: 1200;
 
     padding: 0px;
+    padding-top: 68px;
+    margin: 0px;
 
     background-color: #f4f7f9;
 }
 
 .services,
 .services-text {
-    margin-left: 130px;
     padding: 0px;
+    margin: 0px;
+    margin-left: 130px;
 }
 
 .services-text {
     display: flex;
     width: 398px;
 
-    margin-top: 8px;
+    margin-top: 27px;
 }
 
 .services-menu {
@@ -1405,7 +1411,7 @@ main h2 {
     
     padding: 0px;
 
-    margin-top: 46px;
+    margin-top: 72px;
     margin-bottom: 99px;
     margin-left: 130px;
 }
@@ -1413,8 +1419,8 @@ main h2 {
 .services-menu::before {
     content: "";
     position: absolute;
+    top: 194px;
     left: 360px;
-    top: 192px;
 
     background-image: url(../img/shadow.png);
     width: 10px;
@@ -1423,9 +1429,11 @@ main h2 {
 
 .heading-delivery {
     position: absolute;
-    z-index: 3;
     left: 450px;
-    top: 204px;
+    top: 240px;
+
+    margin: 0px;
+    padding: 0px;
 }
 
 .company-advantages::before {
@@ -1437,7 +1445,17 @@ main h2 {
     background-image: url(../img/delivery.png);
     width: 468px;
     height: 261px;
+}
 
+.heading-delivery-text {
+    position: absolute;
+    width: 275px;
+
+    left: 450px;
+    top: 294px;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 .heading-warranty {
@@ -1452,18 +1470,6 @@ main h2 {
     display: none;
     left: 450px;
     top: 204px;
-}
-
-.heading-delivery-text {
-    position: absolute;
-    /*display: none;*/
-    width: 275px;
-
-    left: 450px;
-    top: 294px;
-
-    padding: 0px;
-    margin: 0px;
 }
 
 .warranty-text {
@@ -1512,11 +1518,6 @@ main h2 {
     left: 450px;
 }
 
-
-.services-menu a:active ~ .services-content li {
-    display: none;
-}
-
 /*________Доставка-Контакты_____*/
 
 
@@ -1524,31 +1525,29 @@ main h2 {
     display: flex;
     position: relative;
     width: 1200px;
+   height: 536px;
     margin: 0px;
-    padding: 0px;
-
-
-    background-color: red;
 }
 
 .delivery-contacts h2 {
+    margin-bottom: 32px;
+}
+
+.delivery-contacts p {
     margin-top: 0px;
     padding: 0px;
-
-    background-color: seagreen;
 }
 
 .delivery-block {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-    align-content: space-between;
+    min-height: 368px;
 
+    padding: 0px;
     margin-top: 82px;
     margin-bottom: 86px;
     margin-left: 130px;
-
-    background-color: sienna;
 }
 
 .contacts {
@@ -1562,31 +1561,27 @@ main h2 {
     margin-right: 130px;
     margin-bottom: 86px;
     margin-left: 122px;
-
-
-    background-color: seashell;
 }
 
 .advertising-text {
     display: flex;
     width: 519px;
+    min-height: 37px;
 
     padding: 0px;
-    margin-top: 0px;
-
-    background-color: slateblue;
+    margin: 0px;
 }
 
 .delivery {
     display: flex;
     flex-direction: column;
     width: 386px;
+    min-height: 161px;
 
     padding: 0px;
     margin: 0px;
-
-    background-color: yellow;
-
+    margin-top: 25px;
+    margin-bottom: 22px;
 }
 
 .delivery-text {
@@ -1594,9 +1589,7 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-
-
-    background-color: wheat;
+    margin-bottom: 22px;
 }
 
 .delivery-company {
@@ -1604,16 +1597,35 @@ main h2 {
     flex-direction: column;
     padding: 0px;
     margin-top: 0px;
-
-    background-color: #212a3a;
 }
 
 .delivery-company li {
-    margin-bottom: 24px;
+    position: relative;
+    margin-bottom: 19px;
 }
 
 .delivery-company li:last-child {
     margin-bottom: 0px;
+}
+
+.delivery-company a {
+    padding-left: 36px;
+}
+
+.delivery-company a::before {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: -0px;
+
+    width: 25px;
+    height: 2px;
+  
+    border-radius: 1px;
+  
+    background-color: #ee3643;
+
 }
 
 .office-address {
@@ -1623,13 +1635,12 @@ main h2 {
     padding: 0px;
     margin-top: 0px;
 
-    background-color: #dc91d8;
 }
 
 .mini-map {
-    /*margin-bottom: 24px;*/
-
-    background-color: dodgerblue;
+    display: flex;
+    margin-top: 36px;
+    margin-bottom: 22px;
 }
 
 
@@ -1816,25 +1827,61 @@ main h2 {
 /*_________Формы___________*/
 
 
+.close-slide {
+    display: none;
+}
+
+.open-slide {
+    display: none;
+}
+
 .modal {
     position: absolute;
 
+    display: none;
+
     color: #000000;
     
-    border: 7px;
+    border-top: 7px;
     border-color: red;
     background-color: #ffffff;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
 
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
 }
 
 .modal-letter {
-    display: none;
     top: 204px;
     right: 291px;;
 
     width: 620px;
+    padding: 0px;
     padding-top: 48px;
+    margin: 0px;
+    border-top: 7px;
+    border-color: red;
 }
 
 .modal-close {
@@ -1852,7 +1899,7 @@ main h2 {
   
     cursor: pointer;
 
-    
+    background: transparent;
   }
 
 .modal-close::before,
@@ -1886,8 +1933,9 @@ main h2 {
     color: #000000;
 
     margin: 0px;
+    margin-bottom: 13px;
     padding: 0px;
-    padding-bottom: 13px;
+
 }
 
 .write-form {
@@ -1895,8 +1943,8 @@ main h2 {
     flex-wrap: wrap;
 
     padding: 0px;
-    padding-bottom: 37px;
     margin: 0px;
+    margin-top: 22px;
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -1933,14 +1981,6 @@ main h2 {
     margin-right: 20px;
 }
 
-.write-form fieldset:last-child {
-    margin-top: 22px;
-}
-
-.write-form textarea {
-    padding-top: 13px;
-}
-
 .send-box {
     display: flex;
     width: 100%;
@@ -1949,6 +1989,9 @@ main h2 {
     background-color: #f4f4f4;
     align-items: center;
     justify-content: center;
+
+    margin: 0px;
+    margin-top: 37px;
 } 
 
 .send {
@@ -1966,11 +2009,15 @@ main h2 {
 }
 
 .modal-map {
-    /*display: flex;*/
     display: none;
     top: 24px;
     left: 131px;
+}
 
+.open-map {
+    display: flex;
+    top: 24px;
+    left: 131px;
 }
 
 
@@ -2172,4 +2219,21 @@ main h2 {
   
     border: 20px solid white;
     border-left-color: #ee3643;
+}
+
+.slide-image-block {
+    position: absolute;
+
+    top: 143px;
+
+    z-index: 3;
+}
+
+.slide1-image-block {
+    position: absolute;
+
+    right: 20px;
+
+    top: 143px;
+    z-index: 2;
 }
