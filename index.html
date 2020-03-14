@@ -100,12 +100,12 @@
             <div class="materials-slide">
               <div class="flag flag-new">новинка</div>
               <b>Материалы</b>
-              <button type="button" class="materials-button">на любой вкус</button>
+              <button type="button" class="promo-button">на любой вкус</button>
             </div>
           </li>
           <li>
             <div class="instruments-slide"><b>Инструменты</b>
-            <button type="button" class="instruments-button">на все случаи</button>
+            <button type="button" class="promo-button">на все случаи</button>
             </div>
           </li>
           <li class="slide-image-block">
@@ -132,17 +132,17 @@
         <ul class="slider-block-left">
           <li>
             <div class="equipment-slide"><b>Техника</b>
-            <button type="button" class="equipment-button">Для стройки</button>
+            <button type="button" class="promo-button">Для стройки</button>
             </div>
           </li>
           <li>
             <div class="sale-slide"><b>Скидки 50%</b>
-            <button type="button" class="sale-button">На 350 товаров</button>
+            <button type="button" class="promo-button">На 350 товаров</button>
             </div>
           </li>
           <li>
             <div class="delivery-slide"><b>Доставка</b>
-            <button type="button" class="delivery-button">На 350 товаров</button>
+            <button type="button" class="promo-button">На 350 товаров</button>
             </div>
           </li>
         </ul>
@@ -200,7 +200,7 @@
               <h3><a href="boschBFG2000.html">Перфоратор BOSCH BFG 2000</a></h3>
               <p class="discount"><span></span></p>
               <p class="price"><b>25500 P.</b></p>
-              </li>
+            </li>
         </ul>
       </section>
       <section class="popular-brand">
@@ -241,6 +241,7 @@
           Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
+        <div class="services-block">
         <ul class="services-menu">
           <li><a href="#delivery" class="services-menu-link active">Доставка</a></li>
           <li><a href="#guarantee" class="services-menu-link">Гарантия</a></li>
@@ -256,25 +257,30 @@
                 поднимая его на ваш этаж!
               </p>
             </div>
-        </li>
-        <li id="guarantee">
-        <h3 class="heading-warranty">Гарантия</h3>
-        <p class="warranty-text">
-          Если купленный у нас товар поломается или заискрит,
-          а также в случае пожара, спровоцированного его возгоранием,<br>  
-          вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
-          сгоревший товар на новый.<br>
-          Дом уж восстановите как-нибудь сами.
-        </p>
-        </li>
-        <li id="credit">
-        <h3 class="heading-credit">Кредит</h3>
-        <p class="credit-text">Залезть в долговую яму стало проще! 
-           Кредитные консультанты придут вам на помощь.
-        </p>
-        <a class="credit-buttom" href="">Отправить заявку</a>
-        </li>
+          </li>
+          <li id="guarantee">
+            <div class="warranty-box">
+              <h3 class="heading-warranty">Гарантия</h3>
+              <p class="warranty-text">
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгоранием,<br>  
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
+                сгоревший товар на новый.<br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </div>  
+          </li>
+          <li id="credit">
+            <div class="credit-box">
+              <h3 class="heading-credit">Кредит</h3>
+              <p class="credit-text">Залезть в долговую яму стало проще! 
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="credit-buttom" href="">Отправить заявку</a>
+            </div>  
+          </li>
         </ul>
+        </div>
       </section>
       <section class="delivery-contacts">
         <div class="delivery-block">
@@ -305,27 +311,24 @@
           ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></a></p>
           <button type="button" class="write-us">Заблудились? Напишите нам!</button>
         </div>
-        <section class="modal modal-letter">
+        <div class="modal modal-letter">
           <form class="write-form" action="" method="POST">
-            <fieldset>
-            <p class="modal-text">Ваше имя:</p>
-              <label class="visually-hidden" for="name">Введите ваше имя и фамилию</label>
+            <p>
+              <label class="modal-text" for="name">Ваше имя:</label>
               <input type="text" id="name" name="name" value="" placeholder="Имя Фамилия"> 
-            </fieldset>
-            <fieldset>
-            <p class="modal-text">Ваш e-mail:</p> 
-              <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+            </p> 
+            <p>
+              <label class="modal-text" for="email">Ваш e-mail</label>
               <input type="text" id="email" name="email" value="" placeholder="email@example.com">
-            </fieldset>
-            <fieldset>
-            <p class="modal-text">Текст письма:</p>
-              <label class="visually-hidden" for="message">Текст письма</label>
+            </p>
+            <p class="message-write">
+              <label class="modal-text" for="message">Текст письма</label>
               <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-            </fieldset>
+            </p>
             <div class="send-box"><button type="submit" class="send">Отправить</button></div>
           </form>
           <button class="modal-close" type="button">Закрыть</button>
-        </section>
+        </div>
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <a><img src="img/map_big.jpg" width="940" height="446" class="map_big" alt="г. Санкт-Петербург, 
@@ -454,7 +457,6 @@
     evt.preventDefault();
     bigMap.classList.remove("open-map");
     });
-
 
     window.addEventListener("keydown", function (evt) {
       if (evt.keyCode === 27) {
