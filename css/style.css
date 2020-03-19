@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
@@ -36,6 +35,7 @@ header {
 }
 
 .header-up-block {
+
     margin: 0px;
     padding: 0px;
     background-color: #293449;
@@ -440,13 +440,12 @@ header {
 }
 
 .promo-button:hover {
-    background-color: #000000;
-    opacity: 20%;
+    background-color: rgba(0,0,0,0.2);
+
 }
 
 .promo-button:active {
-    background-color: #000000;
-    opacity: 30%;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .slider-block a {
@@ -468,6 +467,16 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
+}
+
+.popular-product {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.popular-brand {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .popular-product h2,
@@ -711,11 +720,23 @@ main h2 {
     color: #f3f7f9;
 }
 
-.footer-contacts {
+.footer-contacts-box {
+    width: 100%;
+
     background-color: #293449;
+}
+
+.footer-contacts {
+    display: flex;
+    width: 1200px;
+    min-height: 107px;
+    
     color: #ffffff;
     font-size: 16px;
     line-height: 18px;
+
+    padding: 0px;
+    margin: 0px auto;
 }
 
 .footer-contacts a {
@@ -743,12 +764,14 @@ main h2 {
 
 
 .main-header {
+    width: 100%;
     margin-bottom: 59px;
     min-height: 320px;
 }
 
 .header-block {
     display: flex;
+    margin: auto;
     flex-direction: column;
     min-height: 320px;
 }
@@ -760,15 +783,15 @@ main h2 {
 
 .header-up-block-wrapper {
     display: flex;
-    width: 100%;
-    margin: 0px;
+    width: 1200px;
+    margin: 0px auto;
     padding: 0px;
 }
 
 .header-mid-block {
     display: flex;
     width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
     min-height: 158px;
@@ -779,8 +802,8 @@ main h2 {
     width: 940px;
     padding-left: 0px;
     padding-right: 0px;
+    margin: 0 auto;
     margin-bottom: 60px;
-    margin-left: 130px;
 }
 
 .top-navigation {
@@ -833,10 +856,11 @@ main h2 {
 
 .slider {
     display: flex;
-    margin: 0px;
+    width: 940px;
     padding: 0px;
-    margin-left: 130px;
-    margin-right: 110px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    
 }
 
 .slider-block {
@@ -1039,6 +1063,7 @@ main h2 {
     border: none;
     font-size: 14px;
     color: #ffffff;
+    align-items: center;
     text-transform: uppercase;
     justify-content: center;
     border-radius: 3px;
@@ -1246,7 +1271,7 @@ main h2 {
     opacity: 1;  
 }
 
-.catalog-item .actions .buy:focus {
+.catalog-item .actions .buy:active {
     background-color: #518534;
     border: 3px solid #518534;
 }
@@ -1351,17 +1376,23 @@ main h2 {
 
 
 
+.company-advantages-box {
+    width: 100%;
+
+    background-color: #f4f7f9;
+}
+
 .company-advantages {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 1200;
+    width: 1200px;
     min-height: 522px;
 
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
 
-    background-color: #f4f7f9;
+    
 }
 
 .services {
@@ -1515,8 +1546,8 @@ main h2 {
     display: flex;
     position: relative;
     width: 1200px;
-   height: 536px;
-    margin: 0px;
+    height: 536px;
+    margin: 0px auto;
 }
 
 .delivery-contacts h2 {
@@ -1664,7 +1695,7 @@ main h2 {
     
     height: 193px;
 
-    margin: 0px;
+    margin: 0px auto;
 }
 
 .address-footer {
@@ -1686,11 +1717,13 @@ main h2 {
 
 .nav-footer {
     display: flex;
-
-    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 0;
     margin-top: 42px;
-    margin-right: 130px;
-    margin-left: 68px;
+    padding: 0;
+    text-align: right;
 }
 
 .nav-footer li {
@@ -1701,15 +1734,18 @@ main h2 {
 }
 
 .nav-footer li:last-child {
-    margin-right: 0px;
+    margin-right: 130px;
 }
 
 .footer-item {
     display: flex;
-
-    padding: 0px;
-    margin-right: 130px;
-    margin-left: 91px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 0;
+    margin-top: 29px;
+    padding: 0;
+    text-align: right;
 }
 
 .footer-item li {
@@ -1720,16 +1756,7 @@ main h2 {
 }
 
 .footer-item li:last-child {
-    margin-right: 0px;
-}
-
-.footer-contacts {
-    display: flex;
-    width: 1200px;
-    min-height: 107px;
-
-    padding: 0px;
-    margin: 0px;
+    margin-right: 130px;
 }
 
 .footer-nav-block a:hover,
@@ -1888,13 +1915,15 @@ main h2 {
 }
 
 .modal-letter {
-    top: 204px;
-    right: 291px;;
+    bottom: 50%;
+    left: 50%;
 
     width: 620px;
     padding: 0px;
     padding-top: 24px;
     margin: 0px;
+    margin-left: -310px;
+    margin-bottom: -215px;
     border-top: 7px solid #ee3643;
 }
 
@@ -2029,14 +2058,17 @@ main h2 {
 .modal-map {
     display: none;
     position: fixed;
-    top: 24px;
-    left: 131px;
+    top: 50%;
+    left: 50%;
 }
 
 .open-map {
     display: flex;
-    top: 24px;
-    left: 131px;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -233px;
+    margin-left: -470px;
 }
 
 
@@ -2076,6 +2108,7 @@ main h2 {
     border: none;
     font-size: 21px;
     line-height: 21px;
+    align-items: center;
     color: #000000;
     outline: none;
 
@@ -2155,10 +2188,15 @@ main h2 {
     color: rgba(50, 66, 92, 0.3);
 }
 
+.main-content {
+    width: 1200px;
+
+    margin: auto;
+}
+
 .catalog-navigation {
     display: flex;
     min-height: 59px;
-    align-items: center;
 
     padding: 0px;
     margin: 0px;
@@ -2179,6 +2217,7 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
+    margin-top: 25px;
 }
 
 .catalog-modals a {
@@ -2794,17 +2833,21 @@ input::-webkit-inner-spin-button {
     border: solid 1px #ee3643;
 }
 
+.saying-perforator-box {
+    width: 100%;
+
+    background-color: #f4f7f9;
+}
+
 .saying-perforator {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 1200px;
     min-height: 261px;
 
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
     margin-top: 60px;
-    
-    background-color: #f4f7f9;
 }
 
 .saying-perforator h2 {
@@ -2836,6 +2879,7 @@ input::-webkit-inner-spin-button {
 
 .slide1-image-block {
     display: none;
+
     position: relative;
     top: 0px;
 }
@@ -2932,4 +2976,12 @@ input::-webkit-inner-spin-button {
 
 .modal-basket {
     display: flex;
+    position: fixed;
+    z-index: 100;
+
+    top: 50%;
+    left: 50%;
+
+    left: 375px;
+    top: 250px;
 }

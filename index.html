@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -81,7 +82,7 @@
         </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
+          <li class="active-site-navigation"><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="">Новости</a></li>
@@ -114,9 +115,11 @@
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
             </div>
+            <span class="slide-controls"></span>
+            <span class="slide-controls-next what-slide"></span>
             <button type="button" class="open-catalog-url">Открыть каталог</button>
             <button type="button" class="icon-left-image"><img src="img/icons/icon-left.svg" width="22" height="40" alt="Предыдущий слайд"></button>
-            <button type="button" class="icon-right-image"><img src="img/icons/icon-right.png" width="22" height="40" alt="Следующий слайд"></button>
+            <button type="button" class="icon-right-image"><img src="img/icons/icon-right.png" width="22" height="40" alt="Следующий слайд"></button>     
           </li>
           <li class="slide1-image-block">
             <a><img src="img/slide-image1.jpg" class="slide-image1" width="620" height="266" alt="Слайдер"></a>
@@ -124,6 +127,8 @@
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
             </div>
+            <span class="slide-controls what-slide"></span>
+            <span class="slide-controls-next"></span>
             <button type="button" class="open-catalog-url">Открыть каталог</button>
             <button type="button" class="icon-left-image"><img src="img/icons/icon-left.svg" width="22" height="40" alt="Предыдущий слайд"></button>
             <button type="button" class="icon-right-image"><img src="img/icons/icon-right.png" width="22" height="40" alt="Следующий слайд"></button>
@@ -235,7 +240,8 @@
           </li>
         </ul>
       </section>
-      <section class="company-advantages">
+      <section class="company-advantages-box">
+        <div class="company-advantages">
         <h2 class="services">Сервисы</h2>
         <p class="services-text"> 
           Хороший интернет-магазин отличается от плохого не только ценами!
@@ -280,6 +286,7 @@
             </div>  
           </li>
         </ul>
+        </div>
         </div>
       </section>
       <section class="delivery-contacts">
@@ -339,33 +346,34 @@
     </main>
     <footer class="main-footer">
       <div class="footer-block">
-      <div class="footer-block-up">
-      <p><a class="logo-down"><img src="img/icons/logo-down.svg" alt="Техномарт"></a></p>
-      <p class="address-footer">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        +7 (812) 555-05-55
-      </p>
-      <div class="footer-nav-block">
-      <ul class="nav-footer">
-        <li><a href="">Компания</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <ul class="footer-item"> 
-        <li><a href="">Материалы</a></li>
-        <li><a href="">Техника</a></li>
-        <li><a href="">Инструменты</a></li>
-        <li><a href="">Спецпредложения</a></li>
-      </ul>
-      </div>   
+        <div class="footer-block-up">
+          <p><a class="logo-down"><img src="img/icons/logo-down.svg" alt="Техномарт"></a></p>
+          <p class="address-footer">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            +7 (812) 555-05-55
+          </p>
+        <div class="footer-nav-block">
+          <ul class="nav-footer">
+            <li><a href="">Компания</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+          <ul class="footer-item"> 
+            <li><a href="">Материалы</a></li>
+            <li><a href="">Техника</a></li>
+            <li><a href="">Инструменты</a></li>
+            <li><a href="">Спецпредложения</a></li>
+          </ul>
+        </div>   
       </div>
-      <div class="footer-contacts">
-        <div class="text-copyright">
-          © 2010–2019 Компания «Техномарт»
-          Все права защищены
-        </div>
+      <div class="footer-contacts-box">
+        <div class="footer-contacts">
+          <div class="text-copyright">
+            © 2010–2019 Компания «Техномарт»
+            Все права защищены
+          </div>
         <div class="footer-bottom">
         <ul class="footer-social">
           <li>
@@ -389,97 +397,8 @@
         </div>
       </div>
       </div>
+      </div>
     </footer>
-
-    <form class="enter-big" action="#" method="POST">
-      <label>Ваше имя:
-        <input type="text" name="name" value="" placeholder="Имя Фамилия">
-        </label>
-      <button type="submit">Отправить</button><br>
-    </form>
-  
-  <script>
-
-    var bigMap = document.querySelector(".modal-map");
-    var closeMap = bigMap.querySelector(".modal-close")
-
-    var openMap = document.querySelector(".mini-map");
-  
-    var link = document.querySelector(".write-us");
-    
-    var popup = document.querySelector(".modal-letter");
-    var close = popup.querySelector(".modal-close");
-
-    var form = popup.querySelector(".write-form");
-    var name = popup.querySelector("[name=name]");
-    var email = popup.querySelector("[name=email]");
-  
-    var next = document.querySelector(".icon-right-image");
-
-    var before = document.querySelector(".icon-left-image");
-
-    var slide = document.querySelector(".slide-image-block");
-
-    var slideOne = document.querySelector(".slide1-image-block");
-
-    var isStorageSupport = true;
-    var storage = "";
-
-    try {
-    storage = localStorage.getItem("name");
-    } catch (err) {
-    isStorageSupport = false;
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-      name.focus();
-    });
-
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    });
-
-    form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-
-    console.log("Нужно ввести Имя и e-mail");
-    });
-
-    openMap.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      bigMap.classList.add("open-map");
-    });
-
-    closeMap.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    bigMap.classList.remove("open-map");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-        }
-      }
-    });
-
-    next.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      slide.classList.add("close-slide")
-      console.log("next");
-    });
-
-    before.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      slide.classList.remove("close-slide")
-      console.log("next");
-    });
-
-  </script>
-
+    <script src="../1314531-technomart-27/js/script.js"></script>
   </body>
 </html>
