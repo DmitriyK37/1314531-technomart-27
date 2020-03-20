@@ -416,19 +416,19 @@ header {
     background-color: #1d2739;
 }
 
-.slider-block,
-.slider-block-sale {
+.slider-block {
+    display: flex;
     list-style: none;
+    width: 620px;
+
+    margin: 0px;
+    margin-right: 20px;
+    padding: 0px;
+
+
 }
 
-.slider-block a,
-.slider-block-sale a {
-    display: block;
-
-    background-color: #293449;
-}
-
-.slider-block-right  b,
+.assortment b,
 .slider-block-left b {
     font-family: 'Cuprum';
     font-weight: bold;
@@ -856,32 +856,29 @@ main h2 {
 
 .slider {
     display: flex;
+    flex-wrap: wrap;
     width: 940px;
     padding: 0px;
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 53px;
     
 }
 
-.slider-block {
-    display: flex;
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 130px;
-}
-
-.slider-block-right {
+.assortment {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     list-style: none;
     margin: 0px;
     padding: 0px;
-    width: 640px;
-    height: 409px;
+    width:980px;
 }
 
-.slider-block-right b {
+.assortment div:last-child {
+    margin-right: 0px;
+}
+
+.assortment b {
     display: block;
     padding-top: 26px;
     padding-left: 23px;
@@ -889,21 +886,19 @@ main h2 {
     margin-right: 20px;
 }
 
-.slider-block-right div, 
+.assortment div, 
 .slider-block-left div {
     width: 300px;
     height: 123px;
 }
 
-.slider-block-right div {
+.assortment li {
     margin-right: 20px;
     margin-bottom: 20px;
-
 }
 
-.slider-block-left div {
-    margin-left: 0px;
-    margin-bottom: 20px;
+.assortment li:last-child {
+    margin-right: 0px;
 }
 
 .slider-block-left {
@@ -912,6 +907,15 @@ main h2 {
     list-style: none;
     margin: 0px;
     padding: 0px;
+}
+
+.slider-block-left li {
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.slider-block-left li:last-child {
+    margin-bottom: 0px;
 }
 
 .slider-block-left b {
@@ -1539,7 +1543,13 @@ main h2 {
     left: 450px;
 }
 
-/*________Доставка-Контакты_____*/
+
+
+
+/*___________________Доставка-Контакты_______________________*/
+
+
+
 
 
 .delivery-contacts {
@@ -1868,16 +1878,12 @@ main h2 {
 
 
 
-/*_________Формы___________*/
+/*_____________Формы_________________*/
 
 
-.close-slide {
-    display: none;
-}
 
-.open-slide {
-    display: flex;
-}
+
+
 
 .modal {
     position: fixed;
@@ -2069,9 +2075,17 @@ main h2 {
 
     margin-top: -233px;
     margin-left: -470px;
+
+    animation: bounce 0.6s;
 }
 
+.close-slide {
+    display: none;
+}
 
+.open-slide {
+    display: flex;
+}
 
 
 /*__________________Catalog CSS*___________________*/
@@ -2259,6 +2273,7 @@ main h2 {
 
 .catalog-main {
     display: flex;
+    position: relative;
     width: 940px;
 
     padding: 0px;
@@ -2533,6 +2548,7 @@ input::-webkit-inner-spin-button {
 
 .catalog-item-page {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: column;
     width: 700px;
@@ -2873,22 +2889,18 @@ input::-webkit-inner-spin-button {
 .slide-image-block {
     display: flex;
     position: relative;
-
-    top: 0px;
 }
 
 .slide1-image-block {
     display: none;
-
     position: relative;
-    top: 0px;
 }
 
 .product-in-basket {
     display: flex;
     display: none;
     flex-wrap: wrap;
-    position: relative;
+    position: fixed;
     width: 620px;
 
     color: #000000;
@@ -2897,6 +2909,11 @@ input::-webkit-inner-spin-button {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
     border-top: 7px solid #ee3643;
+
+    z-index: 100;
+
+    bottom: 50%;
+    left: 50%;
 }
 
 .product-in-basket span {
@@ -2976,12 +2993,9 @@ input::-webkit-inner-spin-button {
 
 .modal-basket {
     display: flex;
-    position: fixed;
-    z-index: 100;
 
-    top: 50%;
-    left: 50%;
+    margin-left: -310px;
+    margin-bottom: -125px;
 
-    left: 375px;
-    top: 250px;
+    animation: bounce 0.6s;
 }

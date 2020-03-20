@@ -13,18 +13,16 @@
     var yourName = popup.querySelector("[name=name]");
     var email = popup.querySelector("[name=email]");
   
-    var next = document.querySelector(".icon-right-image");
-
-    var before = document.querySelector(".icon-left-image");
-
     var slide = document.querySelector(".slide-image-block");
+    var next = slide.querySelector(".icon-right-image");
 
     var slideOne = document.querySelector(".slide1-image-block");
+    var before = slideOne.querySelector(".icon-left-image");
 
     var openBasket = document.querySelector(".product-in-basket");
-    var close = openBasket.querySelector(".modal-close");
+    var closeBasket = openBasket.querySelector(".modal-close");
 
-    var buy = document.querySelector(".buy");
+    var buy = document.querySelectorAll(".buy");
 
     var isStorageSupport = true;
     var storage = "";
@@ -34,6 +32,12 @@
     } catch (err) {
     isStorageSupport = false;
     }
+
+    next.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      slide.classList.add("close-slide");
+      console.log("next");
+    });
 
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -71,19 +75,23 @@
       }
     });
 
-    next.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      slide.classList.add("close-slide");
-      console.log("next");
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (bigMap.classList.contains("open-map")) {
+          bigMap.classList.remove("open-map");
+        }
+      }
     });
+    
+    for (var buy of buy) {
+      buy.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        openBasket.classList.add("modal-basket");
+      });
+    }
 
-    buy.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      openBasket.classList.add("modal-basket");
-      name.focus();
-    });
-
-      close.addEventListener("click", function (evt) {
+      closeBasket.addEventListener("click", function (evt) {
       evt.preventDefault();
       openBasket.classList.remove("modal-basket");
     });
