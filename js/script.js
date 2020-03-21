@@ -1,6 +1,6 @@
 
     var bigMap = document.querySelector(".modal-map");
-    var closeMap = bigMap.querySelector(".modal-close")
+    var closeMap = bigMap.querySelector(".modal-close");
 
     var openMap = document.querySelector(".mini-map");
   
@@ -22,7 +22,19 @@
     var openBasket = document.querySelector(".product-in-basket");
     var closeBasket = openBasket.querySelector(".modal-close");
 
-    var buy = document.querySelectorAll(".buy");
+    var buyes = document.querySelectorAll(".buy");
+
+    var guarantee = document.querySelector(".services-content-guarantee");
+
+    var delivery = document.querySelector(".services-content-delivery");
+    
+    var credit = document.querySelector(".services-content-credit");
+    
+    var guaranteeButtom = document.querySelector(".services-menu-link-guarantee");
+    
+    var deliveryButtom = document.querySelector(".services-menu-link-delivery");
+    
+    var creditButtom = document.querySelector(".services-menu-link-credit");
 
     var isStorageSupport = true;
     var storage = "";
@@ -35,14 +47,36 @@
 
     next.addEventListener("click", function (evt) {
       evt.preventDefault();
-      slide.classList.add("close-slide");
+
+      slide.classList.remove("slide-image-block-flex");
+      slide.classList.add("slide-image-block-none");
+
+      slideOne.classList.remove("slide-image-block-none");
+      slideOne.classList.add("slide-image-block-flex");
+
       console.log("next");
     });
 
-    link.addEventListener("click", function (evt) {
+    before.addEventListener("click", function (evt) {
       evt.preventDefault();
+
+      slideOne.classList.remove("slide-image-block-flex");
+      slideOne.classList.add("slide-image-block-none");
+
+      slide.classList.remove("slide-image-block-none");
+      slide.classList.add("slide-image-block-flex");
+
+      console.log("before");
+    });
+
+    link.addEventListener("click", function (evt) {
+      console.log("link1");
+      evt.preventDefault();
+      console.log("link2");
       popup.classList.add("modal-show");
+      console.log("link3");
       yourName.focus();
+      console.log("link4");
     });
 
     close.addEventListener("click", function (evt) {
@@ -51,9 +85,9 @@
     });
 
     form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
+      evt.preventDefault();
 
-    console.log("Нужно ввести Имя и e-mail");
+      console.log("Нужно ввести Имя и e-mail");
     });
 
     openMap.addEventListener("click", function (evt) {
@@ -62,8 +96,8 @@
     });
 
     closeMap.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    bigMap.classList.remove("open-map");
+      evt.preventDefault();
+      bigMap.classList.remove("open-map");
     });
 
     window.addEventListener("keydown", function (evt) {
@@ -84,15 +118,73 @@
       }
     });
     
-    for (var buy of buy) {
-      buy.addEventListener("click", function (evt) {
+   for (var buyIndex = 0; buyIndex < buyes.length; buyIndex++) {
+     buyes[buyIndex].addEventListener("click", function (evt) {
         evt.preventDefault();
         openBasket.classList.add("modal-basket");
       });
-    }
 
-      closeBasket.addEventListener("click", function (evt) {
+   }
+
+    closeBasket.addEventListener("click", function (evt) {
       evt.preventDefault();
       openBasket.classList.remove("modal-basket");
     });
- 
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (openBasket.classList.contains("modal-basket")) {
+          openBasket.classList.remove("modal-basket");
+        }
+      }
+    });
+
+    deliveryButtom.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      
+      delivery.classList.remove("services-content-none");
+      delivery.classList.add("services-content-flex");
+
+      guarantee.classList.add("services-content-none");
+      credit.classList.add("services-content-none");
+
+      deliveryButtom.classList.add("active-services");
+      guaranteeButtom.classList.remove("active-services");
+      creditButtom.classList.remove("active-services");
+    });
+
+    guaranteeButtom.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          
+          delivery.classList.remove("services-content-flex");
+          delivery.classList.add("services-content-none");
+
+          guarantee.classList.remove("services-content-none");
+          guarantee.classList.add("services-content-flex");
+
+          deliveryButtom.classList.remove("active-services");
+
+          creditButtom.classList.remove("active-services");
+
+          guaranteeButtom.classList.add("active-services");
+        });
+
+        creditButtom.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          
+          delivery.classList.remove("services-content-flex");
+          delivery.classList.add("services-content-none");
+
+          guarantee.classList.remove("services-content-flex");
+          guarantee.classList.add("services-content-none");
+
+          credit.classList.remove("services-content-none");
+          credit.classList.add("services-content-flex");
+
+          deliveryButtom.classList.remove("active-services");
+
+          guaranteeButtom.classList.remove("active-services");
+
+          creditButtom.classList.add("active-services");
+        });
