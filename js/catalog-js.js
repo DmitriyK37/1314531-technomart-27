@@ -1,7 +1,7 @@
 var openBasket = document.querySelector(".product-in-basket");
 var closeBasket = openBasket.querySelector(".modal-close");
 
-var buy = document.querySelectorAll(".buy");
+var buyes = document.querySelectorAll(".buy");
 
 var isStorageSupport = true;
 var storage = "";
@@ -12,14 +12,24 @@ storage = localStorage.getItem("name");
 isStorageSupport = false;
 }
 
-for (var buy of buy) {
-    buy.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      openBasket.classList.add("modal-basket");
-    });
-  }
+for (var buyIndex = 0; buyIndex < buyes.length; buyIndex++) {
+  buyes[buyIndex].addEventListener("click", function (evt) {
+     evt.preventDefault();
+     openBasket.classList.add("modal-basket");
+   });
 
-    closeBasket.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    openBasket.classList.remove("modal-basket");
-  });
+}
+
+ closeBasket.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   openBasket.classList.remove("modal-basket");
+ });
+
+ window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     if (openBasket.classList.contains("modal-basket")) {
+       openBasket.classList.remove("modal-basket");
+     }
+   }
+ });
