@@ -269,22 +269,23 @@ header {
     margin-right: 71px;
 }
 
-
-
 .phone-addres {
     display: flex;
     flex-wrap: wrap;
     width: 270px;
+    min-height: 45px;
 
     padding: 0px;
-    padding-top: 46px;
-    padding-bottom: 44px;
-
     margin: 0px;
 }
 
 .phone {
     position: relative;
+    min-height: 45px;
+
+    margin: 0px;
+    margin-top: 46px;
+    padding: 0px;
 }
 
 .icon-phone {
@@ -295,22 +296,17 @@ header {
     height: 19px;
 }
 
-.phone-addres .address {
-    padding-left: 10px;
-}
-
-.phone-addres p {
+/* .phone-addres p {
     margin: 0px;
     padding: 0px;
-}
+} */
 
 .phone a {
     display: flex;
     width: 264px;
-    height: 39px;
+    min-height: 39px;
     border: 3px solid #ffffff;
     font-size: 21px;
-    line-height: 21px;
     color: #e9292a;
     align-items: center;
     justify-content: center;
@@ -328,7 +324,10 @@ header {
     color: #32425c;
 
     padding: 0px;
+    padding-left: 10px;
     margin: 0px;
+    margin-bottom: 40px;
+
 }
 
 .site-enter {
@@ -420,10 +419,6 @@ header {
     list-style: none;
 }
 
-.site-navigation a {
-    color: #ffffff;
-}
-
 .site-navigation a:hover {
     background-color: #293449;
 }
@@ -505,33 +500,41 @@ main h2 {
 }
 
 .popular-product-url {
-    display: block;
+    display: flex;
     width: 253px;
+    height: 38px;
     border: none;
     font-size: 14px;
-    line-height: 18px;
     color: #ffffff;
-    text-align: center;
+    align-items: center;
     text-transform: uppercase;
+    justify-content: center;
     border-radius: 3px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    outline: none;
+
+    margin: 0px;
+    margin-left: 356px;
+    padding: 0px;
 
     background-color: #ee3643;
 }
 
 .popular-brand-url {
-    display: block;
+    display: flex;
     width: 253px;
+    height: 38px;
     border: none;
     font-size: 14px;
-    line-height: 18px;
     color: #ffffff;
-    text-align: center;
+    align-items: center;
     text-transform: uppercase;
+    justify-content: center;
     border-radius: 3px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    outline: none;
+
+    margin: 0px;
+    margin-left: 246px;
+    padding: 0px;
 
     background-color: #ee3643;
 }
@@ -787,6 +790,7 @@ main h2 {
 .header-mid-block {
     display: flex;
     width: 1200px;
+    min-height: 158px;
     margin: 0 auto;
     padding: 0;
 
@@ -796,6 +800,7 @@ main h2 {
 .main-navigation {
     display: flex;
     width: 1200px;
+    min-height: 60px;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0 auto;
@@ -818,6 +823,8 @@ main h2 {
 .site-navigation {
     display: flex;
     width: 940px;
+    align-items: center;
+    justify-content: center;
     margin: 0px auto;
     padding: 0px;
 
@@ -834,10 +841,13 @@ main h2 {
 }
 
 .site-navigation a {
-    display: block;
-    padding-top: 22px;
-    padding-bottom: 26px;
-    text-align: center;
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
 }
 
 .slider {
@@ -1032,7 +1042,7 @@ main h2 {
     position: absolute;
     color: #ffffff;
     left: 24px;
-    top: 4px;
+    top: -4px;
 }
 
 .slide-image-text h3 {
@@ -1068,7 +1078,7 @@ main h2 {
 .open-catalog-url {
     position: absolute;
     left: 25px;
-    bottom: 25px;
+    bottom: 23px;
 }
 
 .open-catalog-url:hover {
@@ -1081,8 +1091,8 @@ main h2 {
 
 .icon-left-image {
     position: absolute;
-    bottom: 112px;
-    left: 25px;
+    bottom: 108px;
+    left: 19px;
     cursor: pointer;
     z-index: 5;
 
@@ -1093,8 +1103,8 @@ main h2 {
 
 .icon-right-image {
     position: absolute;
-    bottom: 112px;
-    right: 25px;
+    bottom: 108px;
+    right: 17px;
     cursor: pointer;
     z-index: 4;
 
@@ -1132,32 +1142,38 @@ main h2 {
 }
 
 .popular-product-menu {
+    display: flex;
+    flex-wrap: nowrap;
     position: relative;
+    align-items: center;
     margin-left: 130px;
     width: 940px;
-}
-
-.popular-product h2 {
-    display: block;
-    padding-top: 33px;
-    padding-bottom: 35px;
-    padding-left: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    min-height: 89px;
 
     background-color: #f9f5f0;
 }
 
-.popular-product-url {
+.popular-product h2 {
+    display: flex;
+    min-height: 89px;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* .popular-product-url {
     position: absolute;
     top: 25px;
     right: 24px;
-}
+} */
 
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
     width: 940px;
+    min-height: 318px;
     margin-top: 20px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -1170,6 +1186,7 @@ main h2 {
     position: relative;
     display: inline-block;
     width: 218px;
+    min-height: 318px;
     margin-right: 20px;
 
     line-height: 20px;
@@ -1292,29 +1309,24 @@ main h2 {
 }
 
 .popular-brand-menu {
+    display: flex;
     position: relative;
     width: 940px;
+    min-height: 89px;
+    align-items: center;
 
     padding: 0px;
     margin-left: 130px;
     margin-bottom: 21px;
 
-}
-
-.popular-brand h2 {
-    display: block;
-    padding-top: 33px;
-    padding-bottom: 35px;
-    padding-left: 30px;
-    margin: 0;
-
     background-color: #f9f5f0;
 }
 
-.popular-brand-url {
-    position: absolute;
-    top: 25px;
-    right: 24px;
+.popular-brand h2 {
+    display: flex;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin: 0px; 
 }
 
 .brand-icon {
@@ -2774,25 +2786,27 @@ input::-webkit-inner-spin-button {
 
 .discount {
     min-height: 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-
+ 
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
     color: #999;
     text-decoration: line-through;
 }
 
+
 .catalog-item h3 {
-    min-height: 40px;
-    padding: 0 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    width: 160px;
+    height: 33px;
+    padding: 0px;
+    margin: 0px auto;
+    margin-top: 5px;
 }
 
 .price {
     position: relative;
     width: 80px;
-    margin: 10px auto;
-    margin-bottom: 21px;
+    margin: 7px auto;
     padding: 10px 30px;
 
     color: white;
@@ -2804,8 +2818,8 @@ input::-webkit-inner-spin-button {
     content: "";
 
     position: absolute;
-    top: 0;
-    right: -20px;
+    top: 0px;
+    right: -21px;
 
     width: 0;
     height: 0;
