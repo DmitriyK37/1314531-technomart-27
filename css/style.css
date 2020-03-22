@@ -280,6 +280,7 @@ header {
 }
 
 .phone {
+    display: flex;
     position: relative;
     min-height: 45px;
 
@@ -295,11 +296,6 @@ header {
     width: 19px;
     height: 19px;
 }
-
-/* .phone-addres p {
-    margin: 0px;
-    padding: 0px;
-} */
 
 .phone a {
     display: flex;
@@ -833,6 +829,7 @@ main h2 {
 }
 
 .site-navigation li {
+    display: flex;
     flex-grow: 1;
 }
 
