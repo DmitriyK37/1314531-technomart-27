@@ -1,6 +1,6 @@
 
     var bigMap = document.querySelector(".modal-map");
-    var closeMap = bigMap.querySelector(".modal-close")
+    var closeMap = bigMap.querySelector(".modal-close");
 
     var openMap = document.querySelector(".mini-map");
   
@@ -13,18 +13,28 @@
     var yourName = popup.querySelector("[name=name]");
     var email = popup.querySelector("[name=email]");
   
-    var next = document.querySelector(".icon-right-image");
-
-    var before = document.querySelector(".icon-left-image");
-
     var slide = document.querySelector(".slide-image-block");
+    var next = slide.querySelector(".icon-right-image");
 
     var slideOne = document.querySelector(".slide1-image-block");
+    var before = slideOne.querySelector(".icon-left-image");
 
     var openBasket = document.querySelector(".product-in-basket");
-    var close = openBasket.querySelector(".modal-close");
+    var closeBasket = openBasket.querySelector(".modal-close");
 
-    var buy = document.querySelector(".buy");
+    var buyes = document.querySelectorAll(".buy");
+
+    var guarantee = document.querySelector(".services-content-guarantee");
+
+    var delivery = document.querySelector(".services-content-delivery");
+    
+    var credit = document.querySelector(".services-content-credit");
+    
+    var guaranteeButtom = document.querySelector(".services-menu-link-guarantee");
+    
+    var deliveryButtom = document.querySelector(".services-menu-link-delivery");
+    
+    var creditButtom = document.querySelector(".services-menu-link-credit");
 
     var isStorageSupport = true;
     var storage = "";
@@ -35,10 +45,38 @@
     isStorageSupport = false;
     }
 
-    link.addEventListener("click", function (evt) {
+    next.addEventListener("click", function (evt) {
       evt.preventDefault();
+
+      slide.classList.remove("slide-image-block-flex");
+      slide.classList.add("slide-image-block-none");
+
+      slideOne.classList.remove("slide-image-block-none");
+      slideOne.classList.add("slide-image-block-flex");
+
+      console.log("next");
+    });
+
+    before.addEventListener("click", function (evt) {
+      evt.preventDefault();
+
+      slideOne.classList.remove("slide-image-block-flex");
+      slideOne.classList.add("slide-image-block-none");
+
+      slide.classList.remove("slide-image-block-none");
+      slide.classList.add("slide-image-block-flex");
+
+      console.log("before");
+    });
+
+    link.addEventListener("click", function (evt) {
+      console.log("link1");
+      evt.preventDefault();
+      console.log("link2");
       popup.classList.add("modal-show");
+      console.log("link3");
       yourName.focus();
+      console.log("link4");
     });
 
     close.addEventListener("click", function (evt) {
@@ -47,9 +85,9 @@
     });
 
     form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
+      evt.preventDefault();
 
-    console.log("Нужно ввести Имя и e-mail");
+      console.log("Нужно ввести Имя и e-mail");
     });
 
     openMap.addEventListener("click", function (evt) {
@@ -58,8 +96,8 @@
     });
 
     closeMap.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    bigMap.classList.remove("open-map");
+      evt.preventDefault();
+      bigMap.classList.remove("open-map");
     });
 
     window.addEventListener("keydown", function (evt) {
@@ -71,20 +109,82 @@
       }
     });
 
-    next.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      slide.classList.add("close-slide");
-      console.log("next");
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (bigMap.classList.contains("open-map")) {
+          bigMap.classList.remove("open-map");
+        }
+      }
     });
+    
+   for (var buyIndex = 0; buyIndex < buyes.length; buyIndex++) {
+     buyes[buyIndex].addEventListener("click", function (evt) {
+        evt.preventDefault();
+        openBasket.classList.add("modal-basket");
+      });
 
-    buy.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      openBasket.classList.add("modal-basket");
-      name.focus();
-    });
+   }
 
-      close.addEventListener("click", function (evt) {
+    closeBasket.addEventListener("click", function (evt) {
       evt.preventDefault();
       openBasket.classList.remove("modal-basket");
     });
- 
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (openBasket.classList.contains("modal-basket")) {
+          openBasket.classList.remove("modal-basket");
+        }
+      }
+    });
+
+    deliveryButtom.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      
+      delivery.classList.remove("services-content-none");
+      delivery.classList.add("services-content-flex");
+
+      guarantee.classList.add("services-content-none");
+      credit.classList.add("services-content-none");
+
+      deliveryButtom.classList.add("active-services");
+      guaranteeButtom.classList.remove("active-services");
+      creditButtom.classList.remove("active-services");
+    });
+
+    guaranteeButtom.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          
+          delivery.classList.remove("services-content-flex");
+          delivery.classList.add("services-content-none");
+
+          guarantee.classList.remove("services-content-none");
+          guarantee.classList.add("services-content-flex");
+
+          deliveryButtom.classList.remove("active-services");
+
+          creditButtom.classList.remove("active-services");
+
+          guaranteeButtom.classList.add("active-services");
+        });
+
+        creditButtom.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          
+          delivery.classList.remove("services-content-flex");
+          delivery.classList.add("services-content-none");
+
+          guarantee.classList.remove("services-content-flex");
+          guarantee.classList.add("services-content-none");
+
+          credit.classList.remove("services-content-none");
+          credit.classList.add("services-content-flex");
+
+          deliveryButtom.classList.remove("active-services");
+
+          guaranteeButtom.classList.remove("active-services");
+
+          creditButtom.classList.add("active-services");
+        });

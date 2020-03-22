@@ -96,7 +96,7 @@
     <main>
       <h1 class="visually-hidden">Техномарт-лучший интернет-магазин лучших строительных материалов и инструментов</h1>
       <div class="slider">
-        <ul class="slider-block-right">
+        <ul class="assortment">
           <li>
             <div class="materials-slide">
               <div class="flag flag-new">новинка</div>
@@ -109,7 +109,14 @@
             <button type="button" class="promo-button">на все случаи</button>
             </div>
           </li>
-          <li class="slide-image-block">
+          <li>
+            <div class="equipment-slide"><b>Техника</b>
+            <button type="button" class="promo-button">Для стройки</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="slider-block">
+          <li class="slide-image-block slide-image-block-flex">
             <img src="img/slide-image.jpg" class="slide-image" width="620" height="266" alt="Слайдер">
             <div class="slide-image-text">
               <h3>Дрели</h3>
@@ -121,7 +128,7 @@
             <button type="button" class="icon-left-image"><img src="img/icons/icon-left.svg" width="22" height="40" alt="Предыдущий слайд"></button>
             <button type="button" class="icon-right-image"><img src="img/icons/icon-right.png" width="22" height="40" alt="Следующий слайд"></button>     
           </li>
-          <li class="slide1-image-block">
+          <li class="slide1-image-block slide-image-block-none">
             <a><img src="img/slide-image1.jpg" class="slide-image1" width="620" height="266" alt="Слайдер"></a>
             <div class="slide-image-text">
               <h3>Перфораторы</h3>
@@ -135,11 +142,6 @@
           </li>
         </ul>
         <ul class="slider-block-left">
-          <li>
-            <div class="equipment-slide"><b>Техника</b>
-            <button type="button" class="promo-button">Для стройки</button>
-            </div>
-          </li>
           <li>
             <div class="sale-slide"><b>Скидки 50%</b>
             <button type="button" class="promo-button">На 350 товаров</button>
@@ -249,12 +251,12 @@
         </p>
         <div class="services-block">
         <ul class="services-menu">
-          <li><a href="#delivery" class="services-menu-link active">Доставка</a></li>
-          <li><a href="#guarantee" class="services-menu-link">Гарантия</a></li>
-          <li><a href="#credit" class="services-menu-link">Кредит</a></li>
+          <li><a href="#delivery" class="services-menu-link-delivery active-services">Доставка</a></li>
+          <li><a href="#guarantee" class="services-menu-link-guarantee">Гарантия</a></li>
+          <li><a href="#credit" class="services-menu-link-credit">Кредит</a></li>
         </ul>
         <ul class="services-content">
-          <li id="delivery">
+          <li class="services-content-delivery services-content-flex" id="delivery">
             <div class="delivery-box">
               <h3 class="heading-delivery">Доставка</h3>
               <p class="heading-delivery-text">Мы с удовольствием доставим ваш товар прямо
@@ -264,7 +266,7 @@
               </p>
             </div>
           </li>
-          <li id="guarantee">
+          <li class="services-content-guarantee services-content-none" id="guarantee">
             <div class="warranty-box">
               <h3 class="heading-warranty">Гарантия</h3>
               <p class="warranty-text">
@@ -276,7 +278,7 @@
               </p>
             </div>  
           </li>
-          <li id="credit">
+          <li class="services-content-credit services-content-none" id="credit">
             <div class="credit-box">
               <h3 class="heading-credit">Кредит</h3>
               <p class="credit-text">Залезть в долговую яму стало проще! 
@@ -399,6 +401,14 @@
       </div>
       </div>
     </footer>
-    <script src="../1314531-technomart-27/js/script.js"></script>
+    <div class="product-in-basket">
+      <span>Товар добавлен в корзину!</span>
+      <div class="product-in-basket-button">
+        <a href="">Оформить заказ</a>
+        <button class="buy-close" type="button">Продолжить покупки</button>
+      </div>  
+        <button class="modal-close" type="button">Закрыть</button>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
