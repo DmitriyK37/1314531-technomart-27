@@ -2,7 +2,7 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+    font-family: 'Cuprum','PT Sans', Arial, sans-serif;
     font-size: 17px;
     line-height: 17px;
     color: #000000;
@@ -31,11 +31,6 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
 }
 
-header {
-    width: 100%;
-    background-color: #f4f7f9;
-}
-
 .header-up-block {
     width: 100%;
     margin: 0px;
@@ -48,13 +43,24 @@ header {
     position: absolute;
     width: 220px;
     min-height: 47px;
-    align-items: center;
     justify-content: center;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     margin: 0px;
-    margin-left: 130px;
 
     background-color: #ee3643;
+}
+
+.logo:hover {
+    background-color: #ca2c37;
+}
+
+.logo:active {
+    background-color: #ba2732;
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 13px;
 }
 
 .search-block {
@@ -64,7 +70,7 @@ header {
 
     padding: 0px;
     margin: 0px;
-    margin-left: 350px;
+    margin-left: 220px;
 }
 
 .search {
@@ -262,7 +268,7 @@ header {
     color: #ee3643;
 
     padding: 0px;
-    padding-top: 5px;
+    padding-top: 4px;
     margin: 0px;
     margin-top: 46px;
     margin-left: 183px;
@@ -299,7 +305,7 @@ header {
 
 .phone a {
     display: flex;
-    width: 264px;
+    width: 244px;
     min-height: 39px;
     border: 3px solid #ffffff;
     font-size: 21px;
@@ -308,6 +314,7 @@ header {
     justify-content: center;
 
     padding: 0px;
+    padding-left: 20px;
     margin: 0px;
 
     background-color: #f1f5f7;
@@ -322,7 +329,7 @@ header {
     padding: 0px;
     padding-left: 10px;
     margin: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 
 }
 
@@ -340,7 +347,6 @@ header {
 
 .enter {
     display: flex;
-    width: 121px;
     height: 45px;
     border: none;
     font-size: 21px;
@@ -351,6 +357,7 @@ header {
 
     padding: 0px;
     padding-left: 48px;
+    padding-right: 24px;
     margin: 0px;
 
     background-color: #ffffff;
@@ -382,14 +389,15 @@ header {
 }
 
 .registration {
-    display: block;
+    display: flex;
     width: 150px;
     height: 45px;
     border: none;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
     outline: none;
 
@@ -439,7 +447,7 @@ header {
 
 .assortment b,
 .slider-block-left b {
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: #ffffff;
@@ -470,7 +478,7 @@ header {
 }
 
 main h2 {
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 30px;
     color: #000000;
 
@@ -509,7 +517,8 @@ main h2 {
     outline: none;
 
     margin: 0px;
-    margin-left: 356px;
+    margin-top: 25px;
+    margin-left: 355px;
     padding: 0px;
 
     background-color: #ee3643;
@@ -529,6 +538,7 @@ main h2 {
     outline: none;
 
     margin: 0px;
+    margin-top: 25px;
     margin-left: 246px;
     padding: 0px;
 
@@ -552,7 +562,8 @@ main h2 {
 
     text-transform: uppercase;
 
-    margin-top: 68px;
+    margin-top: 70px;
+    padding: 0px;
 }
 
 .company-advantages ul {
@@ -563,7 +574,7 @@ main h2 {
 .services-menu-link-guarantee,
 .services-menu-link-credit {
     display: flex;
-    width: 240px;
+    width: 217px;
     height: 61px;
     border: none;
     outline: none;
@@ -571,7 +582,9 @@ main h2 {
     line-height: 30px;
     color: #ffffff;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+
+    padding-left: 23px;
 
     box-shadow: inset 0px 1px 0 0 #32425c;
     background-color: #293449;
@@ -579,7 +592,7 @@ main h2 {
 
 .active-services {
     display: flex;
-    width: 240px;
+    width: 217px;
     height: 61px;
     border: none;
     outline: none;
@@ -587,7 +600,9 @@ main h2 {
     line-height: 30px;
     color: #32425c;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+
+    padding-left: 23px;
 
     box-shadow: inset 0px 1px 0 0 #ffffff;
     background-color: #ffffff;
@@ -601,7 +616,7 @@ main h2 {
 }
 
 .company-advantages p {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
@@ -610,7 +625,7 @@ main h2 {
 .advertising-text,
 .delivery-text,
 .office-address {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
@@ -648,7 +663,7 @@ main h2 {
 }
 
 .office-address {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
@@ -663,7 +678,7 @@ main h2 {
 }
 
 .write-us {
-    display: block;
+    display: flex;
     width: 300px;
     height: 38px;
     border: none;
@@ -671,7 +686,8 @@ main h2 {
     line-height: 18px;
     color: #ffffff;
     text-transform: uppercase;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 3px;
 
     padding: 0px;
@@ -759,6 +775,8 @@ main h2 {
 
 
 .main-header {
+    width: 100%;
+    background-color: #f4f7f9;
     margin: 0px;
     margin-bottom: 59px;
     min-height: 320px;
@@ -773,9 +791,16 @@ main h2 {
     min-height: 320px;
 }
 
+.box {
+    width: 1200px;
+
+    margin: 0 auto;
+    background-color: #293449;
+}
+
 .header-up-block-wrapper {
     display: flex;
-    width: 1200px;
+    width: 940px;
     min-height: 42px;
     margin: 0px auto;
     padding: 0px;
@@ -1142,7 +1167,6 @@ main h2 {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    align-items: center;
     margin-left: 130px;
     width: 940px;
     min-height: 89px;
@@ -1152,28 +1176,30 @@ main h2 {
 
 .popular-product h2 {
     display: flex;
-    min-height: 89px;
-    align-items: center;
     text-transform: uppercase;
-    padding-left: 30px;
     margin-top: 0px;
+    margin-top: 31px;
+    margin-left: 30px;
     margin-bottom: 0px;
 }
-
-/* .popular-product-url {
-    position: absolute;
-    top: 25px;
-    right: 24px;
-} */
 
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
     width: 940px;
-    min-height: 318px;
-    margin-top: 20px;
     margin-right: 0px;
     margin-bottom: 20px;
+    margin-left: 130px;
+
+    padding: 0px;
+}
+
+.catalog-list-index {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0px;
+    margin-top: 20px;
     margin-left: 130px;
 
     padding: 0px;
@@ -1183,8 +1209,8 @@ main h2 {
     position: relative;
     display: inline-block;
     width: 218px;
-    min-height: 318px;
-    margin-right: 20px;
+    min-height: 316px;
+    vertical-align: middle;
 
     line-height: 20px;
     font-weight: bold;
@@ -1193,16 +1219,22 @@ main h2 {
     border: 1px solid #ccc;
 }
 
-.catalog-list li:last-child {
-    margin-right: 0px;
+.catalog-list .catalog-item:not(:nth-child(3n)) {
+    margin-right: 20px;
+}
+
+.catalog-list-index .catalog-item:not(:nth-child(4n)) {
+    margin-right: 20px;
 }
 
 .catalog-item img {
     width: 218px;
     height: 168px;
+
+    order: -1;
 }
 
-.catalog-item .actions {
+.actions {
     position: absolute;
     top: 0;
     left: 0;
@@ -1211,12 +1243,12 @@ main h2 {
     height: 88px;
     padding: 40px 0;
 
-    background-color: rgba(255,255,255,0.9);
+    background-color: #ffffff;
     z-index: 10;
 }
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
   display: block;
   position: relative;
   width: 129px;
@@ -1232,19 +1264,19 @@ main h2 {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.catalog-item .actions .bookmark {
+.actions .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
 }
 
-.catalog-item .actions .buy::before {
+.actions .buy::before {
     content: "";
     position: absolute;
     top: 7px;
@@ -1256,26 +1288,26 @@ main h2 {
     opacity: 0.3;
 }
 
-.catalog-item .actions .bookmark:hover {
+.actions .bookmark:hover {
     border-color: #32425c;
 }
 
-.catalog-item .actions .bookmark:focus {
+.actions .bookmark:focus {
     opacity: 0.3;
 }
 
 
-.catalog-item .actions .buy:hover {
+.actions .buy:hover {
     background-color: #5fbb2d;
     border: 3px solid #5fbb2d;
     border-bottom-color: #367315;
 }
 
-.catalog-item .actions .buy:hover ~ svg {
+.buy:hover ~ svg {
     opacity: 1;
 }
 
-.catalog-item .actions .buy:active {
+.actions .buy:active {
     background-color: #518534;
     border: 3px solid #518534;
 }
@@ -1286,6 +1318,10 @@ main h2 {
 
 .catalog-item:hover .actions {
     display: block;
+}
+
+.catalog-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item .flag {
@@ -1310,7 +1346,6 @@ main h2 {
     position: relative;
     width: 940px;
     min-height: 89px;
-    align-items: center;
 
     padding: 0px;
     margin-left: 130px;
@@ -1322,8 +1357,10 @@ main h2 {
 .popular-brand h2 {
     display: flex;
     text-transform: uppercase;
-    padding-left: 30px;
-    margin: 0px; 
+    margin: 0px;
+    margin-top: 31px;
+    margin-left: 30px;
+    padding: 0px;
 }
 
 .brand-icon {
@@ -1352,10 +1389,11 @@ main h2 {
 .brand-icon li {
     display: flex;
     width: 218px;
-    height: 145px;
+    min-height: 143px;
     border: solid 1px #eaeaea;
     justify-content: center;
     align-items: center;
+    margin: 0px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
@@ -1397,7 +1435,7 @@ main h2 {
 .services {
     padding: 0px;
     margin: 0px;
-    margin-top: 63px;
+    margin-top: 64px;
     margin-left: 130px;
 }
 
@@ -1426,7 +1464,7 @@ main h2 {
 
     padding: 0px;
 
-    margin-top: 72px;
+    margin-top: 70px;
     margin-bottom: 99px;
     margin-left: 130px;
 }
@@ -1447,7 +1485,7 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-top: 72px;
+    margin-top: 68px;
     margin-left: 80px;
 }
 
@@ -1469,9 +1507,10 @@ main h2 {
 }
 
 .heading-delivery {
+    text-transform: uppercase;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 34px;
+    margin-bottom: 23px;
 }
 
 .heading-delivery-text {
@@ -1491,9 +1530,10 @@ main h2 {
 }
 
 .heading-warranty {
+    text-transform: uppercase;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 34px;
+    margin-bottom: 23px;
 }
 
 .warranty-text {
@@ -1513,9 +1553,10 @@ main h2 {
 }
 
 .heading-credit {
+    text-transform: uppercase;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 34px;
+    margin-bottom: 23px;
 }
 
 .credit-text {
@@ -1564,7 +1605,8 @@ main h2 {
 }
 
 .delivery-contacts h2 {
-    margin-bottom: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .delivery-contacts p {
@@ -1579,7 +1621,7 @@ main h2 {
     min-height: 368px;
 
     padding: 0px;
-    margin-top: 82px;
+    margin-top: 86px;
     margin-bottom: 86px;
     margin-left: 130px;
 }
@@ -1591,7 +1633,7 @@ main h2 {
     text-align: left;
     align-content: space-between;
 
-    margin-top: 82px;
+    margin-top: 86px;
     margin-right: 130px;
     margin-bottom: 86px;
     margin-left: 122px;
@@ -1615,7 +1657,7 @@ main h2 {
     padding: 0px;
     margin: 0px;
     margin-top: 25px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .delivery-text {
@@ -1673,8 +1715,8 @@ main h2 {
 
 .mini-map {
     display: flex;
-    margin-top: 36px;
-    margin-bottom: 22px;
+    margin-top: 30px;
+    margin-bottom: 24px;
 }
 
 
@@ -1726,8 +1768,14 @@ main h2 {
     margin: 0px;
     margin: 0px;
     margin-top: 27px;
-    margin-left: 130px;
+    margin-left: 133px;
     padding: 0px;
+}
+
+.address-footer a {
+    text-decoration: none;
+
+    color: #f3f7f9;
 }
 
 .footer-nav-block {
@@ -1745,7 +1793,7 @@ main h2 {
     justify-content: flex-end;
     align-self: flex-end;
     margin: 0;
-    margin-top: 42px;
+    margin-top: 38px;
     padding: 0;
     text-align: right;
 }
@@ -1753,7 +1801,7 @@ main h2 {
 .nav-footer li {
     padding: 0px;
 
-    margin-right: 60px;
+    margin-right: 59px;
     margin-left: 0px;
 }
 
@@ -1767,7 +1815,7 @@ main h2 {
     justify-content: flex-end;
     align-self: flex-end;
     margin: 0;
-    margin-top: 29px;
+    margin-top: 34px;
     padding: 0;
     text-align: right;
 }
@@ -1775,7 +1823,7 @@ main h2 {
 .footer-item li {
     padding: 0px;
 
-    margin-right: 60px;
+    margin-right: 55px;
     margin-left: 0px;
 }
 
@@ -1841,8 +1889,8 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-top: 39px;
-    margin-left: 130px;
+    margin-top: 38px;
+    margin-left: 131px;
 }
 
 .feedback {
@@ -1850,7 +1898,7 @@ main h2 {
 
     width: 135px;
     height: 32px;
-    margin-top: 40px;
+    margin-top: 38px;
     margin-left: 119px;
 }
 
@@ -1859,7 +1907,7 @@ main h2 {
 
     width: 96px;
     height: 32px;
-    margin-top: 40px;
+    margin-top: 38px;
     margin-left: 53px;
 }
 
@@ -1947,6 +1995,8 @@ main h2 {
     margin-left: -310px;
     margin-bottom: -215px;
     border-top: 7px solid #ee3643;
+
+    z-index: 50;
 }
 
 .modal-close {
@@ -2031,8 +2081,9 @@ main h2 {
 }
 
 .write-form input[type="text"],
+.message-write textarea,
 .write-form textarea[id="message-field"] {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   color: #a9a9a9;
   box-sizing: border-box;
@@ -2041,13 +2092,12 @@ main h2 {
   margin: 0px;
 }
 
-#message {
+.message-write textarea {
     width: 438px;
     min-height: 114px;
 
     margin: 0px;
     padding-top: 13px;
-    padding-left: 16px;
 }
 
 .send-box {
@@ -2116,6 +2166,7 @@ main h2 {
 }
 
 .enter-form {
+    display: flex;
     list-style: none;
     position: relative;
     display: flex;
@@ -2124,14 +2175,14 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-top: 46px;
-    margin-bottom: 43px;
+    margin-bottom: 32px;
     margin-left: 50px;
 }
 
 .input {
     display: flex;
-    width: 299px;
+    position: relative;
+    width: 297px;
     height: 45px;
     border: none;
     font-size: 21px;
@@ -2141,8 +2192,9 @@ main h2 {
     outline: none;
 
     padding: 0px;
-    padding-left: 41px;
+    padding-left: 47px;
     margin: 0px;
+    margin-top: 45px;
 
     background-color: #ffffff;
 }
@@ -2156,7 +2208,7 @@ main h2 {
     width: 20px;
     height: 18px;
 
-    top: 13px;
+    top: 60px;
     left: 13px;
 }
 
@@ -2165,27 +2217,29 @@ main h2 {
     width: 20px;
     height: 17px;
 
-    top: 14px;
+    top: 60px;
     right: 10px;
 }
 
-.input:hover ~ svg path {
+.icon-logout:hover path,
+.icon-user:hover path {
     fill: #212a3a;
 }
 
-.input:focus ~ svg path {
+.icon-logout:active path,
+.icon-user:active path {
     opacity: 0.3;
 }
 
 .my-orders,
 .private-office {
+    display: flex;
     font-size: 16px;
     color: #32425c;
     text-decoration: underline;
 
     padding: 0px;
     margin: 0px;
-    margin-top: 10px;
 }
 
 .my-orders {
@@ -2197,7 +2251,7 @@ main h2 {
     content: "";
 
     position: absolute;
-    bottom: 8px;
+    bottom: 15px;
     left: 107px;
 
     width: 5px;
@@ -2237,15 +2291,14 @@ main h2 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #000000;
 
     padding: 0px;
     margin: 0px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .catalog-modals a {
@@ -2253,18 +2306,26 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-right: 41px;
 }
 
-.catalog-modals li {
+.catalog-modals-url {
+    display: flex;
     position: relative;
 }
 
-.catalog-modals svg {
-    position: absolute;
+.catalog-modals-url::after {
+    content: "";
+    position: relative;
+    width: 8px;
+    height: 12px;
+    top: 2px;
 
-    top: 3px;
-    right: 16px;
+    margin: 0px;
+    margin-right: 15px;
+    margin-left: 17px;
+    padding: 0px;
+
+    background-image: url(../img/icons/icon-right-small.svg);
 }
 
 .catalog-heading {
@@ -2276,6 +2337,7 @@ main h2 {
     line-height: 30px;
     color: #32425c;
     align-items: center;
+    text-transform: uppercase;
 
     padding: 0px;
     padding-left: 30px;
@@ -2310,7 +2372,7 @@ main h2 {
     width: 202px;
     min-height: 38px;
     align-items: center;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
 
@@ -2324,7 +2386,7 @@ main h2 {
 }
 
 .filter-price {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 17px;
     text-transform: uppercase;
@@ -2353,21 +2415,20 @@ main h2 {
 }
 
 .filter legend:first-child {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .catalog-line {
     width: 220px;
     height: 1px;
 
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 
     background-color: #d7dcde;
 }
 
 .filter legend {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
     text-transform: uppercase;
     font-weight: bold;
@@ -2379,6 +2440,7 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
+    margin-bottom: 25px;
 }
 
 .range-controls {
@@ -2439,12 +2501,13 @@ main h2 {
     display: inline-block;
     position: relative;
     width: 50%;
+    vertical-align: middle;
 }
 
 .price-controls input {
     width: 95px;
     padding: 8px 0px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
     text-align: center;
     color: #000000;
@@ -2488,10 +2551,11 @@ input::-webkit-inner-spin-button {
 
     padding: 0px;
     margin: 0px;
+    margin-bottom: 19px;
 }
 
 .filter-option {
-    margin-bottom: 19px;
+    margin-bottom: 25px;
     margin-left: 35px;
 
     text-transform: uppercase;
@@ -2549,13 +2613,15 @@ input::-webkit-inner-spin-button {
     width: 140px;
     height: 38px;
     border: solid 1px #e5e5e5;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
     text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
 
-    margin-top: 83px;
+    margin-top: 58px;
 
     background-color: #ffffff;
 }
@@ -2582,13 +2648,17 @@ input::-webkit-inner-spin-button {
     width: 700px;
     min-height: 38px;
 
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+
     background-color: #f7f3ec;
     border-radius: 3px;
 }
 
 .sort-item p {
     display: flex;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     align-items: center;
@@ -2609,7 +2679,7 @@ input::-webkit-inner-spin-button {
 
 .by-price {
     display: flex;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     color: #000000;
     cursor: pointer;
@@ -2628,7 +2698,7 @@ input::-webkit-inner-spin-button {
 
 .by-type {
     display: flex;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     color: #000000;
     cursor: pointer;
@@ -2647,7 +2717,7 @@ input::-webkit-inner-spin-button {
 
 .by-functional {
     display: flex;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     color: #000000;
     cursor: pointer;
@@ -2746,7 +2816,8 @@ input::-webkit-inner-spin-button {
     background-image: url(../img/icons/icon-down-dir-red.svg);
 }
 
-.catalog-list {
+.catalog-list,
+.catalog-list-index {
     list-style: none;
 }
 
@@ -2761,11 +2832,11 @@ input::-webkit-inner-spin-button {
     border: solid 1px #e5e5e5;
 }
 
-.catalog {
+.catalog-item {
     padding: 0px;
     margin: 0px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-bottom: 20px;
+
 }
 
 .catalog:nth-child(3n+3) {
@@ -2773,7 +2844,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-item a {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
@@ -2831,7 +2902,7 @@ input::-webkit-inner-spin-button {
 
     padding: 0px;
     margin: 0px;
-    margin-top: 52px;
+    margin-top: 32px;
 }
 
 .switching-item {
@@ -2842,7 +2913,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     width: 38px;
     height: 38px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     align-items: center;
     justify-content: center;
 
@@ -2904,7 +2975,7 @@ input::-webkit-inner-spin-button {
 }
 
 .saying-perforator p {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 

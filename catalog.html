@@ -5,47 +5,49 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header catalog-header">
       <section class="header-block">
         <div class="header-up-block">
-        <div class="header-up-block-wrapper">
-          <a class="logo"><img src="img/icons/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
-          <form class="search-block" action="#" method="get">
-            <input type="text" class="search" name="search">
-            <label class="search-all">
-              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-              <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0
-               0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 
-               17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0
-                3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-               </svg>
-               <span class="search-text">Поиск:</span>
-            </label>
-          </form>
-        <ul class="top-navigation">
-          <li class="marker">
-            <a href="">Закладки: 0</a>
-            <svg class="marker-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-            <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637
-            0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
-          </li>
-          <li class="basket basket-full">
-            <a href="">Корзина: 10</a>
-            <svg class="basket-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-              <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
-              <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
-              <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-            </svg>
-          </li>
-          <li class="checkout">
-            <a href="">Оформить заказ</a>
-          </li>
-        </ul>
-        </div>
+          <div class="box">
+            <div class="header-up-block-wrapper">
+              <a href="index.html" class="logo"><img src="img/icons/logo-technomart.svg" width="109" height="19" alt="Техномарт"></a>
+              <form class="search-block" action="#" method="get">
+                <input type="text" class="search" name="search">
+                <label class="search-all">
+                  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                  <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0
+                  0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 
+                  17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0
+                    3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                  </svg>
+                  <span class="search-text">Поиск:</span>
+                </label>
+              </form>
+            <ul class="top-navigation">
+              <li class="marker">
+                <a href="">Закладки: 0</a>
+                <svg class="marker-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637
+                0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+              </li>
+              <li class="basket basket-full">
+                <a href="">Корзина: 10</a>
+                <svg class="basket-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                  <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
+              </li>
+              <li class="checkout">
+                <a href="">Оформить заказ</a>
+              </li>
+            </ul>
+            </div>
+          </div>
         </div>
         <div class="header-mid-block">
         <p class="text-title">
@@ -60,7 +62,7 @@
               2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 
               1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
             </svg>
-            <a href="tel:+78125550555">+7(812)555-05-55</a>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <p class="address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -74,11 +76,11 @@
               <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 
               17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
             </svg></a>
-            <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+            <a href="#"><svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
               <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 
               1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 
               4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
-            </svg>
+            </svg></a>
           </li>
           <li><a href="" class="my-orders">Мои заказы</a></li>
           <li><a href="" class="private-office">Личный кабинет</a></li>
@@ -101,17 +103,14 @@
       <section class="main-content">
       <div class="catalog-navigation">
         <ul class="catalog-modals">
-          <li>
+          <li  class="catalog-modals-url">
             <a href="index.html" class="home-page"><img src="img/icons/icon-home.svg" width="14" height="12" alt="Главная"></a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
           </li>
-          <li>
+          <li  class="catalog-modals-url">
             <a href="catalog.html">Каталог</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
           </li>
-          <li>
-            <a href="">Инструменты</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+          <li  class="catalog-modals-url">
+            <a href="">Инструмент</a>
           </li>
           <li>
             <a href="">Перфораторы</a>
@@ -347,10 +346,10 @@
     <footer class="main-footer">
       <div class="footer-block">
         <div class="footer-block-up">
-          <a class="logo-down"><img src="img/icons/logo-down.svg" width="138" height="23" alt="Техномарт"></a>
+          <a href="index.html" class="logo-down"><img src="img/icons/logo-down.svg" width="138" height="23" alt="Техномарт"></a>
           <p class="address-footer">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            +7 (812) 555-05-55
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <div class="footer-nav-block">
             <ul class="nav-footer">
