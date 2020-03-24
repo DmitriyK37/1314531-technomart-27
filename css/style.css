@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'Cuprum','PT Sans', Arial, sans-serif;
@@ -271,7 +270,7 @@ input[type="radio"].visually-hidden {
     padding-top: 4px;
     margin: 0px;
     margin-top: 46px;
-    margin-left: 183px;
+    margin-left: 53px;
     margin-right: 71px;
 }
 
@@ -438,7 +437,6 @@ input[type="radio"].visually-hidden {
     width: 620px;
 
     margin: 0px;
-    margin-left: 130px;
     margin-right: 20px;
     padding: 0px;
 
@@ -487,12 +485,12 @@ main h2 {
 }
 
 .popular-product {
-    width: 1200px;
+    width: 940px;
     margin: 0 auto;
 }
 
 .popular-brand {
-    width: 1200px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -704,7 +702,6 @@ main h2 {
     justify-content: center;
     padding: 0px;
     margin: 0px;
-    margin-left: 130px;
 
     border: none;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -738,13 +735,12 @@ main h2 {
 
 .footer-contacts {
     display: flex;
-    width: 1200px;
+    width: 940px;
     min-height: 107px;
 
     color: #ffffff;
     font-size: 16px;
     line-height: 18px;
-
     margin: 0px auto;
 
     background-color: #293449;
@@ -775,7 +771,6 @@ main h2 {
 
 
 .main-header {
-    width: 100%;
     background-color: #f4f7f9;
     margin: 0px;
     margin-bottom: 59px;
@@ -786,16 +781,9 @@ main h2 {
 .header-block {
     display: flex;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     flex-direction: column;
     min-height: 320px;
-}
-
-.box {
-    width: 1200px;
-
-    margin: 0 auto;
-    background-color: #293449;
 }
 
 .header-up-block-wrapper {
@@ -810,17 +798,15 @@ main h2 {
 
 .header-mid-block {
     display: flex;
-    width: 1200px;
+    width: 940px;
     min-height: 158px;
     margin: 0 auto;
     padding: 0;
-
-    background-color: #f4f7f9;
 }
 
 .main-navigation {
     display: flex;
-    width: 1200px;
+    width: 940px;
     min-height: 60px;
     padding-left: 0px;
     padding-right: 0px;
@@ -875,7 +861,7 @@ main h2 {
 .slider {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 940px;
     padding: 0px;
     margin: 0 auto;
     margin-bottom: 53px;
@@ -1167,7 +1153,6 @@ main h2 {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    margin-left: 130px;
     width: 940px;
     min-height: 89px;
 
@@ -1189,7 +1174,6 @@ main h2 {
     width: 940px;
     margin-right: 0px;
     margin-bottom: 20px;
-    margin-left: 130px;
 
     padding: 0px;
 }
@@ -1200,7 +1184,6 @@ main h2 {
     width: 940px;
     margin: 0px;
     margin-top: 20px;
-    margin-left: 130px;
 
     padding: 0px;
 }
@@ -1348,7 +1331,6 @@ main h2 {
     min-height: 89px;
 
     padding: 0px;
-    margin-left: 130px;
     margin-bottom: 21px;
 
     background-color: #f9f5f0;
@@ -1366,10 +1348,9 @@ main h2 {
 .brand-icon {
     display: flex;
     flex-wrap: wrap;
-    width: 970px;
+    width: 940px;
 
     margin-top: 20px;
-    margin-left: 130px;
     margin-bottom: 65px;
     padding: 0px;
 }
@@ -1423,20 +1404,17 @@ main h2 {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 1200px;
+    width: 940px;
     min-height: 522px;
 
     padding: 0px;
     margin: 0px auto;
-
-
 }
 
 .services {
     padding: 0px;
     margin: 0px;
     margin-top: 64px;
-    margin-left: 130px;
 }
 
 .services-text {
@@ -1445,7 +1423,6 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-left: 130px;
     margin-top: 27px;
 }
 
@@ -1455,7 +1432,6 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-right: 131px;
 }
 
 .services-menu {
@@ -1463,17 +1439,15 @@ main h2 {
     flex-direction: column;
 
     padding: 0px;
-
     margin-top: 70px;
     margin-bottom: 99px;
-    margin-left: 130px;
 }
 
 .services-menu::before {
     content: "";
     position: absolute;
     top: 194px;
-    left: 360px;
+    left: 230px;
 
     background-image: url(../img/shadow.png);
     width: 10px;
@@ -1599,14 +1573,14 @@ main h2 {
 .delivery-contacts {
     display: flex;
     position: relative;
-    width: 1200px;
-    height: 536px;
+    width: 940px;
+    min-height: 537px;
     margin: 0px auto;
 }
 
 .delivery-contacts h2 {
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .delivery-contacts p {
@@ -1622,8 +1596,7 @@ main h2 {
 
     padding: 0px;
     margin-top: 86px;
-    margin-bottom: 86px;
-    margin-left: 130px;
+    margin-bottom: 84px;
 }
 
 .contacts {
@@ -1634,8 +1607,7 @@ main h2 {
     align-content: space-between;
 
     margin-top: 86px;
-    margin-right: 130px;
-    margin-bottom: 86px;
+    margin-bottom: 83px;
     margin-left: 122px;
 }
 
@@ -1728,24 +1700,25 @@ main h2 {
 
 .main-footer {
     display: flex;
-    width: 100%;
     margin: 0px auto;
     padding: 0px;
+
+
+}
+
+.footer-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
 
     background-color: #32425c;
 }
 
-.footer-block {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-
-    padding: 0px;
-    margin: 0px auto;
-}
-
 .footer-block-up {
-    width: 1200px;
+    width: 940px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1754,8 +1727,6 @@ main h2 {
 
     padding: 0px;
     margin: 0px auto;
-
-    background-color: #32425c;
 }
 
 .address-footer {
@@ -1768,7 +1739,7 @@ main h2 {
     margin: 0px;
     margin: 0px;
     margin-top: 27px;
-    margin-left: 133px;
+    margin-left: 3px;
     padding: 0px;
 }
 
@@ -1784,7 +1755,6 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-right: 130px;
 }
 
 .nav-footer {
@@ -1890,7 +1860,7 @@ main h2 {
     padding: 0px;
     margin: 0px;
     margin-top: 38px;
-    margin-left: 131px;
+    margin-left: 1px;
 }
 
 .feedback {
@@ -1976,13 +1946,39 @@ main h2 {
     100% {
       transform: translateY(0);
     }
-  }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+}
 
 .modal-show {
     display: block;
 
     animation: bounce 0.6s;
 }
+
+.modal-error {
+    animation: shake 0.6s;
+  }
 
 .modal-letter {
     bottom: 50%;
@@ -2271,9 +2267,9 @@ main h2 {
 }
 
 .main-content {
-    width: 1200px;
+    width: 940px;
 
-    margin: auto;
+    margin: 0 auto;
 }
 
 .catalog-navigation {
@@ -2282,7 +2278,6 @@ main h2 {
 
     padding: 0px;
     margin: 0px;
-    margin-left: 130px;
 
     background-color: #ffffff;
 }
@@ -2342,7 +2337,6 @@ main h2 {
     padding: 0px;
     padding-left: 30px;
     margin: 0px;
-    margin-left: 130px;
 
     background-color: #f2f6f8;
 }
@@ -2355,7 +2349,6 @@ main h2 {
     padding: 0px;
     margin: 0px;
     margin-top: 20px;
-    margin-left: 130px;
 }
 
 .form-find {
@@ -2517,15 +2510,6 @@ main h2 {
     background: #f7f3ec;
 
     outline: none;
-}
-
-input[type='number'] {
-    -moz-appearance:textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
 }
 
 .max-price {
@@ -2955,7 +2939,7 @@ input::-webkit-inner-spin-button {
 .saying-perforator {
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    width: 940px;
     min-height: 261px;
 
     padding: 0px;
@@ -2971,7 +2955,6 @@ input::-webkit-inner-spin-button {
 
     padding: 0px;
     margin-top: 67px;
-    margin-left: 130px;
 }
 
 .saying-perforator p {
@@ -2982,7 +2965,6 @@ input::-webkit-inner-spin-button {
     padding: 0px;
     margin: 0px;
     margin-top: 34px;
-    margin-left: 130px;
 }
 
 .slide-image-block {
